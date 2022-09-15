@@ -1,15 +1,7 @@
 import { readable } from 'svelte/store';
 
 export const cards = readable([
-    {
-        "title": "Activ8 Planet",
-        "description": "Sustainability project in collaboration with multiple universities in Europe.",
-    },
-    {
-        "title": "Ikea Pre-owned",
-        "description": "Service design concept for letting Ikea collect and refurbish furniture.",
-        "url":"servicedesign"
-    },
+
     {
         "title": "Make a Difference",
         "description": "Enabling humanitarian organisations to request support from individuals through a simple interface.",
@@ -17,6 +9,17 @@ export const cards = readable([
 
     },
 
+    {
+        "title": "Ikea Pre-owned",
+        "description": "Service design concept for letting Ikea collect and refurbish furniture.",
+        "url":"servicedesign"
+    },
+
+    {
+        "title": "Dental aid",
+        "description": "Mobile concept for communicating the importance of good dental hygiene for children",
+        "url":"dental"
+    },
 ]);
 
 export const artPosts = readable([

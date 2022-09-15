@@ -16,8 +16,7 @@
 		data-y_margin="16">
 	</script>
 
-<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css">
-
+	<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css" />
 </svelte:head>
 
 <page-wrapper>
@@ -77,6 +76,13 @@
 		font-family: forma-djr-display, sans-serif;
 		font-weight: 800;
 		font-size: 2.5rem;
+		font-style: normal;
+	}
+
+	:global(h3) {
+		font-family: omnes, sans-serif;
+		font-weight: 700;
+		font-size: 1.8rem;
 		margin: 0;
 		font-style: normal;
 	}
@@ -93,6 +99,14 @@
 	:global(.smalltext) {
 		font-size: 1rem;
 		color: #333;
+	}
+
+	:global(.subtext) {
+		color: rgba(24, 24, 24, 0.5);
+		box-sizing: border-box;
+		font-family: omnes-semicond, sans-serif;
+		font-weight: 400;
+		font-style: normal;
 	}
 
 	:global(.active) {
