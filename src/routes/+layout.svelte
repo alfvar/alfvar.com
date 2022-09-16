@@ -81,11 +81,12 @@
 	}
 
 	:global(h3) {
-		font-family: omnes, sans-serif;
+		font-family: omnes-pro, sans-serif;
 		font-weight: 600;
 		font-size: 1.7rem;
 		margin: 0;
 		font-style: normal;
+		
 	}
 
 	:global(h4) {
