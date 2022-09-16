@@ -1,13 +1,13 @@
 <div class="wrapper">
 	<h2>ENABLING FOR AID</h2>
 
-	<p class="text text7 textlarge">
+	<p class="text7 textlarge">
 		In a team of 5 other students we tried to bridge the needs of humanitarian organizations and
 		people's will to contribute with donations of items or engagement.
 	</p>
 
 	<br />
-	<h4 class="subtext text text7">
+	<h4 class="subtext text7">
 		This is a Design Studio project. That means it was carried through during class for Halmstad
 		University. The client is still real and this project evolved organically with the client.
 	</h4>

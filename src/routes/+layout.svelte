@@ -81,12 +81,12 @@
 	}
 
 	:global(h3) {
-		font-family: omnes-pro, sans-serif;
-		font-weight: 600;
+		font-family: omnes-semicond, sans-serif;
+		color: #666;
+		font-weight: 700;
 		font-size: 1.7rem;
 		margin: 0;
 		font-style: normal;
-		
 	}
 
 	:global(h4) {
@@ -95,17 +95,17 @@
 		color: #333;
 		box-sizing: border-box;
 		font-family: omnes-semicond, sans-serif;
-		font-weight: 400;
+		font-weight: 500;
 		font-style: normal;
 	}
 
 	:global(.subtext) {
-		color: #777;
+		color: #aaa;
 	}
 
 	:global(a) {
-		font-family: omnes, sans-serif;
-		font-weight: 400;
+		font-family: omnes-semicond, sans-serif;
+		font-weight: 700;
 		font-style: normal;
 		color: black;
 		text-decoration: none;
