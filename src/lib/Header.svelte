@@ -45,16 +45,6 @@
 		display: block;
 	}
 
-	h4 {
-		text-align: center;
-		margin: 0;
-		color: #333;
-		box-sizing: border-box;
-		font-family: omnes-semicond, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-	}
-
 	.divider {
 		width: 100%;
 		height: 1.75px;

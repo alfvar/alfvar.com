@@ -16,8 +16,7 @@
 		data-y_margin="16">
 	</script>
 
-<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css">
-
+	<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css" />
 </svelte:head>
 
 <page-wrapper>
@@ -79,6 +78,28 @@
 		font-size: 2.5rem;
 		margin: 0;
 		font-style: normal;
+	}
+
+	:global(h3) {
+		font-family: omnes, sans-serif;
+		font-weight: 600;
+		font-size: 1.7rem;
+		margin: 0;
+		font-style: normal;
+	}
+
+	:global(h4) {
+		text-align: center;
+		margin: 0;
+		color: #333;
+		box-sizing: border-box;
+		font-family: omnes-semicond, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	:global(.subtext) {
+		color: #777;
 	}
 
 	:global(a) {
