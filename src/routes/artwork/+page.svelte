@@ -5,9 +5,7 @@
 <div class="wrapper">
     <h2>Artwork</h2>
     <p>This is the artwork page.</p>
-    <div class="grid">
-<image src=""></image>
-    </div>
+    <div class="grid"></div>
 
 </div>
 
