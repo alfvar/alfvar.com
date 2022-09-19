@@ -20,7 +20,6 @@
 	}
 </script>
 
-
 <div class="navbar-wrapper">
 	<h1 class="logo">alfvar</h1>
 	<h4>is studying Digital Design and Innovation in Halmstad</h4>
@@ -46,12 +45,9 @@
 	}
 
 	.divider {
-		width: 100%;
-		height: 1.75px;
-		border-bottom-style: solid;
-		border-color: #333;
-
 		margin: 0.5em 0;
+		width: 100%;
+
 	}
 	.topnav {
 		display: flex;

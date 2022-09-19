@@ -10,13 +10,17 @@
 	<h4 class="subtext text7">
 		This is a Design Studio project. That means it was carried through during class for Halmstad
 		University. The client is still real and this project evolved organically with the client.
+
 	</h4>
 	<div class="text25">
-		<br /> <br />
+
+		<div class="divider"></div>
 
 		<h3>The brief</h3>
 
 		<p class="longtext text">
+
+
 			When Russia invaded Ukraine in the spring of 2022, everyone wanted to help, but the logistics
 			of humanitarian organizations only supported donations of money. Individuals who wanted to
 			contribute with their engagement or items went unappreciated and had nowhere to turn to. The
@@ -50,14 +54,10 @@
 		padding-top: 0;
 		padding-bottom: 1rem;
 	}
-	.text7 {
-		margin-left: 7%;
-		margin-right: 7%;
-	}
 
-	.text25 {
-		margin-left: 25%;
-		margin-right: 25%;
+	.divider {
+		border-color:#aaa
+		
 	}
 
 	.textlarge {

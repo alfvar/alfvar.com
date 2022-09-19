@@ -53,8 +53,8 @@
 		padding: 1rem 2rem;
 		margin: 1.75rem auto;
 		margin-top: 0;
-		background-color: rgb(235, 235, 235);
-		border-color: rgb(235, 235, 235);
+		border-color: #333;
+		border-style: solid;
 		border-radius: 0.1em;
 	}
 	:global(p) {
@@ -103,6 +103,16 @@
 		color: #aaa;
 	}
 
+	:global(.text7) {
+		margin-left: 1.75%;
+		margin-right: 1.75%;
+	}
+
+	:global(.text25) {
+		margin-left: 6.25%;
+		margin-right: 6.25%;
+	}
+
 	:global(a) {
 		font-family: omnes-semicond, sans-serif;
 		font-weight: 700;
@@ -121,6 +131,12 @@
 		text-decoration: underline;
 	}
 
+	:global(.divider) {
+		width: 100%;
+		height: 2.75px;
+		margin: 2rem auto;
+		background-color: #333;
+	}
 	footer {
 		display: flex;
 		flex-direction: column;
@@ -130,7 +146,6 @@
 
 	footer a {
 		padding-right: 1rem;
-
 		color: #333;
 	}
 
@@ -143,6 +158,16 @@
 		}
 		:global(.wrapper) {
 			margin: 1.75rem 0;
+		}
+
+		:global(.text7) {
+			margin-left: 7%;
+			margin-right: 7%;
+		}
+
+		:global(.text25) {
+			margin-left: 25%;
+			margin-right: 25%;
 		}
 
 		header {

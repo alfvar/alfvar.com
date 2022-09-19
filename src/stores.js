@@ -13,7 +13,7 @@ export const cards = readable([
     },
     {
         "title": "Ikea Pre-owned",
-        "description": "Service design concept for letting Ikea collect and refurbish furniture.",
+        "description": "This case study hasn't been written yet either",
         "url": "servicedesign"
     }
 
