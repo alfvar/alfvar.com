@@ -47,7 +47,6 @@
 	.divider {
 		margin: 0.5em 0;
 		width: 100%;
-
 	}
 	.topnav {
 		display: flex;

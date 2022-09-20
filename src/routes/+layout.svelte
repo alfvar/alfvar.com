@@ -53,8 +53,7 @@
 		padding: 1rem 2rem;
 		margin: 1.75rem auto;
 		margin-top: 0;
-		border-color: #333;
-		border-style: solid;
+		background-color: #eee;
 		border-radius: 0.1em;
 	}
 	:global(p) {

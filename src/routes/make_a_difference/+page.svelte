@@ -10,17 +10,13 @@
 	<h4 class="subtext text7">
 		This is a Design Studio project. That means it was carried through during class for Halmstad
 		University. The client is still real and this project evolved organically with the client.
-
 	</h4>
 	<div class="text25">
-
-		<div class="divider"></div>
+		<div class="divider" />
 
 		<h3>The brief</h3>
 
 		<p class="longtext text">
-
-
 			When Russia invaded Ukraine in the spring of 2022, everyone wanted to help, but the logistics
 			of humanitarian organizations only supported donations of money. Individuals who wanted to
 			contribute with their engagement or items went unappreciated and had nowhere to turn to. The
@@ -35,7 +31,7 @@
 			rather than aiding Swedish refugees when they have arrived. Since money is very easy to move,
 			this was the reason why individuals didn't receive the opportunity to contribute with items or
 			engagement. Some positions also required a verification including criminal records, which made
-			aid from individuals a big commitment. 
+			aid from individuals a bigger commitment.
 
 			<br />
 		</p>
@@ -56,8 +52,7 @@
 	}
 
 	.divider {
-		border-color:#aaa
-		
+		color: #aaa;
 	}
 
 	.textlarge {

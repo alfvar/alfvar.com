@@ -6,15 +6,6 @@ export const cards = readable([
         "description": "Enabling humanitarian organisations to request support from individuals through a simple interface.",
         "url": "make_a_difference"
 
-    },
-    {
-        "title": "Dental aid",
-        "description": "This case study hasn't been written yet :)",
-    },
-    {
-        "title": "Ikea Pre-owned",
-        "description": "This case study hasn't been written yet either",
-        "url": "servicedesign"
     }
 
 
