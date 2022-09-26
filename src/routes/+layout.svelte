@@ -142,7 +142,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 1.5rem;
-		}
+	}
 
 	footer a {
 		padding-right: 1rem;
@@ -183,8 +183,7 @@
 
 		footer {
 			flex-direction: row;
-			margin-top: 0rem;
-
+			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}
 </style>
