@@ -6,23 +6,16 @@
 			In a team of 5 other students we tried to bridge the needs of humanitarian organizations and
 			people's will to contribute with donations of items or engagement.
 		</p>
-
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 		<br />
 
 		<h4 class="text text7 subtext">
 			This is a Design Studio project. That means it was carried through during class for Halmstad
 			University. The client is still real and this project evolved organically with the client.
 		</h4>
-
 	</div>
+	<br />
 
 	<div class="text text25">
-
 		<h3>The brief</h3>
 
 		<p class="text longtext">
@@ -33,6 +26,7 @@
 			county in Sweden.
 			<br />
 		</p>
+		<br />
 
 		<h3>The challenge</h3>
 		<p class="longtext text">
@@ -44,6 +38,8 @@
 
 			<br />
 		</p>
+		<br />
+
 		<h3>The results</h3>
 		<p class="longtext text">
 			More stuff will be here :)
@@ -55,7 +51,6 @@
 
 <style>
 	.text {
-
 	}
 
 	.white {
@@ -64,12 +59,13 @@
 
 	.dark {
 		background-color: rgb(20, 20, 20);
-		margin: -2rem -2rem 2rem;
-		padding:4rem 0;
+		margin: -1.5rem -2rem 2rem;
+		padding: 2rem 0;
 		border-radius: 0.1em;
 	}
 	.textlarge {
 		font-size: 1.5rem;
+		text-align: center;
 	}
 
 	h2 {
@@ -79,7 +75,6 @@
 
 	h3 {
 		padding-top: 1rem;
-		padding-bottom: 0.2rem;
 		color: rgb(100, 100, 100);
 	}
 </style>

@@ -85,6 +85,8 @@
 		font-weight: 700;
 		font-size: 1.7rem;
 		margin: 0;
+		line-height: 0.01;
+
 		font-style: normal;
 	}
 
@@ -100,6 +102,7 @@
 
 	:global(.subtext) {
 		color: #555;
+		font-style: italic;
 	}
 
 	:global(.text7) {
@@ -184,6 +187,7 @@
 
 		footer {
 			flex-direction: row;
+			width:100%;
 			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}
