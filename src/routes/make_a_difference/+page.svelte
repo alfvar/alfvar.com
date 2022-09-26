@@ -1,22 +1,31 @@
 <div class="wrapper">
-	<h2>ENABLING FOR AID</h2>
+	<div class="dark">
+		<h2 class="white">Enabling for aid</h2>
 
-	<p class="text7 textlarge">
-		In a team of 5 other students we tried to bridge the needs of humanitarian organizations and
-		people's will to contribute with donations of items or engagement.
-	</p>
+		<p class="text text7 textlarge white">
+			In a team of 5 other students we tried to bridge the needs of humanitarian organizations and
+			people's will to contribute with donations of items or engagement.
+		</p>
 
-	<br />
-	<h4 class="subtext text7">
-		This is a Design Studio project. That means it was carried through during class for Halmstad
-		University. The client is still real and this project evolved organically with the client.
-	</h4>
-	<div class="text25">
-		<div class="divider" />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<h4 class="text text7 subtext">
+			This is a Design Studio project. That means it was carried through during class for Halmstad
+			University. The client is still real and this project evolved organically with the client.
+		</h4>
+
+	</div>
+
+	<div class="text text25">
 
 		<h3>The brief</h3>
 
-		<p class="longtext text">
+		<p class="text longtext">
 			When Russia invaded Ukraine in the spring of 2022, everyone wanted to help, but the logistics
 			of humanitarian organizations only supported donations of money. Individuals who wanted to
 			contribute with their engagement or items went unappreciated and had nowhere to turn to. The
@@ -29,9 +38,9 @@
 		<p class="longtext text">
 			As it turned out, most humanitarian organizations actually contribute in other countries,
 			rather than aiding Swedish refugees when they have arrived. Since money is very easy to move,
-			this was the reason why individuals didn't receive the opportunity to contribute with items or
-			engagement. Some positions also required a verification including criminal records, which made
-			aid from individuals a bigger commitment.
+			individuals didn't receive the opportunity to contribute with items or engagement. Some
+			positions also required a verification including criminal records, which made aid from
+			individuals a bigger commitment.
 
 			<br />
 		</p>
@@ -46,15 +55,19 @@
 
 <style>
 	.text {
-		margin: auto;
-		padding-top: 0;
-		padding-bottom: 1rem;
+
 	}
 
-	.divider {
-		color: #aaa;
+	.white {
+		color: #fff;
 	}
 
+	.dark {
+		background-color: rgb(20, 20, 20);
+		margin: -2rem -2rem 2rem;
+		padding:4rem 0;
+		border-radius: 0.1em;
+	}
 	.textlarge {
 		font-size: 1.5rem;
 	}

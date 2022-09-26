@@ -50,8 +50,8 @@
 	}
 
 	:global(.wrapper) {
-		padding: 1rem 2rem;
-		margin: 1.75rem auto;
+		padding: 1.5rem 2rem;
+		margin: 1.75rem auto 0.5rem;
 		margin-top: 0;
 		background-color: #eee;
 		border-radius: 0.1em;
@@ -72,16 +72,16 @@
 		text-align: center;
 	}
 	:global(h2) {
-		font-family: forma-djr-display, sans-serif;
-		font-weight: 800;
-		font-size: 2.5rem;
-		margin: 0;
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 700;
 		font-style: normal;
+		font-size: 3rem;
+		margin: 0;
+		letter-spacing: -1px;
 	}
 
 	:global(h3) {
-		font-family: omnes-semicond, sans-serif;
-		color: #666;
+		font-family: forma-djr-text, sans-serif;
 		font-weight: 700;
 		font-size: 1.7rem;
 		margin: 0;
@@ -89,32 +89,32 @@
 	}
 
 	:global(h4) {
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 400;
+		font-style: normal;
 		text-align: center;
 		margin: 0;
 		color: #333;
 		box-sizing: border-box;
-		font-family: omnes-semicond, sans-serif;
-		font-weight: 500;
-		font-style: normal;
 	}
 
 	:global(.subtext) {
-		color: #aaa;
+		color: #555;
 	}
 
 	:global(.text7) {
-		margin-left: 1.75%;
-		margin-right: 1.75%;
+		margin-left: 7%;
+		margin-right: 7%;
 	}
 
 	:global(.text25) {
-		margin-left: 6.25%;
-		margin-right: 6.25%;
+		margin-left: 7%;
+		margin-right: 7%;
 	}
 
 	:global(a) {
-		font-family: omnes-semicond, sans-serif;
-		font-weight: 700;
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 400;
 		font-style: normal;
 		color: black;
 		text-decoration: none;
@@ -132,7 +132,7 @@
 
 	:global(.divider) {
 		width: 100%;
-		height: 2.75px;
+		height: 1.5px;
 		margin: 2rem auto;
 		background-color: #333;
 	}
@@ -141,7 +141,8 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-	}
+		margin-top: 1.5rem;
+		}
 
 	footer a {
 		padding-right: 1rem;
@@ -156,7 +157,7 @@
 			align-items: flex-start;
 		}
 		:global(.wrapper) {
-			margin: 1.75rem 0;
+			margin: 1.75rem 3rem 0.5rem 0rem;
 		}
 
 		:global(.text7) {
@@ -165,8 +166,8 @@
 		}
 
 		:global(.text25) {
-			margin-left: 25%;
-			margin-right: 25%;
+			margin-left: 20%;
+			margin-right: 20%;
 		}
 
 		header {
@@ -182,6 +183,8 @@
 
 		footer {
 			flex-direction: row;
+			margin-top: 0rem;
+
 		}
 	}
 </style>

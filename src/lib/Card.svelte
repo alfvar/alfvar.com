@@ -1,19 +1,21 @@
 <script>
-    import { cards } from "../stores.js";
+	import { cards } from '../stores.js';
 </script>
 
 {#each $cards as item}
-    <div class="wrapper">
-        <h2>{item.title}</h2>
-        <p>{item.description}</p>
-        <a href={item.url}>Read more</a>
-    </div>
+	<div class="wrapper">
+		<h2>{item.title}</h2>
+		<p>{item.description}</p>
+		<a href={item.url}>Read more →</a>
+	</div>
 {/each}
 
 <style>
+	a {
+		font-size: 1em;
+	}
 
-    a {
-        font-size: 1em;
-    }
-
+	p {
+		margin-top: 0.5rem;
+	}
 </style>
