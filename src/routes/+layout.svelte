@@ -44,15 +44,14 @@
 		height: 100%;
 	}
 	main {
-		margin: 1rem;
+		margin: 0rem;
 		height: fit-content;
 		margin-top: 3rem;
 	}
 
 	:global(.wrapper) {
 		padding: 1.5rem 2rem;
-		margin: 1.75rem auto 0.5rem;
-		margin-top: 0;
+		margin: 1.75rem 0 0.5rem;
 		background-color: #eee;
 		border-radius: 0.1em;
 	}
@@ -150,6 +149,13 @@
 	footer a {
 		padding-right: 1rem;
 		color: #333;
+	}
+
+	@media (min-width: 600px) {
+		:global(.wrapper) {
+		margin: 1.75rem 3rem 0.5rem;
+
+	}
 	}
 
 	@media (min-width: 1200px) {
