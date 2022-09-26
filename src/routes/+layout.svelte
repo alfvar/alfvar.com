@@ -157,7 +157,7 @@
 			align-items: flex-start;
 		}
 		:global(.wrapper) {
-			margin: 1.75rem 3rem 0.5rem 0rem;
+			margin: 1.75rem 0rem 0.5rem 0rem;
 		}
 
 		:global(.text7) {
@@ -178,7 +178,8 @@
 		}
 
 		main {
-			width: 60%;
+			width: 100%;
+			margin-right: 4rem;
 		}
 
 		footer {
