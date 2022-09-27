@@ -15,6 +15,7 @@
 		data-x_margin="16"
 		data-y_margin="16">
 	</script>
+	<title>Alfvar</title>
 
 	<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css" />
 </svelte:head>
@@ -151,11 +152,33 @@
 		color: #333;
 	}
 
+	:global(.highlight-container, .highlight) {
+  position: relative;
+}
+
+:global(.highlight-container) {
+  display: inline-block;
+}
+:global(.highlight-container:before) {
+  content: " ";
+  display: block;
+  height: 70%;
+  width: 97%;
+  margin-left: -2px;
+  margin-right: -3px;
+  position: absolute;
+  background: #ffd50088;
+  transform: rotate(2deg);
+  top: 0px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
 	@media (min-width: 600px) {
 		:global(.wrapper) {
-		margin: 1.75rem 3rem 0.5rem;
-
-	}
+			margin: 1.75rem 3rem 0.5rem;
+		}
 	}
 
 	@media (min-width: 1200px) {
@@ -193,7 +216,7 @@
 
 		footer {
 			flex-direction: row;
-			width:100%;
+			width: 100%;
 			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}

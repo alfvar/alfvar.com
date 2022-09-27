@@ -33,8 +33,11 @@
 			As it turned out, most humanitarian organizations actually contribute in other countries,
 			rather than aiding Swedish refugees when they have arrived. Since money is very easy to move,
 			individuals didn't receive the opportunity to contribute with items or engagement. Some
-			positions also required a verification including criminal records, which made aid from
-			individuals a bigger commitment.
+			positions also required a verification including criminal records (adressing human trafficking concerns), which made aid from
+			individuals a <span class="highlight-container"
+				><span class="highlight">bigger commitment</span></span
+			>
+			than it had to be.
 
 			<br />
 		</p>
