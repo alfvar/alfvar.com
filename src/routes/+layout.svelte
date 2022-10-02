@@ -166,28 +166,6 @@
 		font-size: 1.1rem;
 	}
 
-	:global(.highlight-container, .highlight) {
-		position: relative;
-	}
-
-	:global(.highlight-container) {
-		display: inline-block;
-	}
-	:global(.highlight-container:before) {
-		content: ' ';
-		display: block;
-		height: 70%;
-		width: 97%;
-		margin-left: -2px;
-		margin-right: -3px;
-		position: absolute;
-		background: #ffd50088;
-		transform: rotate(2deg);
-		top: 0px;
-		left: -1px;
-		border-radius: 20% 25% 20% 24%;
-		padding: 10px 3px 3px 10px;
-	}
 
 	@media (min-width: 600px) {
 		:global(.wrapper) {

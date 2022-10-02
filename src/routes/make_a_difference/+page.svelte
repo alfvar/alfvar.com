@@ -70,9 +70,7 @@
 			<h3 class="handwriting sidetext">Week 2</h3>
 			<h3>Finding the right context</h3>
 
-			<span class="highlight-container"
-				><span class="highlight">only supported donations of money.</span></span
-			>
+
 		</div>
 	</div>
 </div>
