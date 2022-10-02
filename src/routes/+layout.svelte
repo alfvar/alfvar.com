@@ -55,14 +55,15 @@
 		margin: 1.75rem 0 0.5rem;
 		background-color: #eee;
 		border-radius: 0.1em;
+		position: relative;
 	}
+
 	:global(p) {
 		color: #333;
 		font-family: minion-pro, serif;
 		font-style: normal;
 		font-size: 1.3rem;
 	}
-
 	:global(h1) {
 		color: var(--theme-color);
 		font-size: 4rem;
@@ -79,7 +80,6 @@
 		margin: 0;
 		letter-spacing: -1px;
 	}
-
 	:global(h3) {
 		font-family: forma-djr-text, sans-serif;
 		font-weight: 700;
@@ -89,7 +89,6 @@
 
 		font-style: normal;
 	}
-
 	:global(h4) {
 		font-family: forma-djr-text, sans-serif;
 		font-weight: 400;
@@ -99,22 +98,18 @@
 		color: #333;
 		box-sizing: border-box;
 	}
-
 	:global(.subtext) {
 		color: #555;
 		font-style: italic;
 	}
-
 	:global(.text7) {
 		margin-left: 7%;
 		margin-right: 7%;
 	}
-
 	:global(.text25) {
 		margin-left: 7%;
 		margin-right: 7%;
 	}
-
 	:global(a) {
 		font-family: forma-djr-text, sans-serif;
 		font-weight: 400;
@@ -123,16 +118,13 @@
 		text-decoration: none;
 		list-style-type: none;
 	}
-
 	:global(.smalltext) {
 		font-size: 1rem;
 		color: #333;
 	}
-
 	:global(.active) {
 		text-decoration: underline;
 	}
-
 	:global(.divider) {
 		width: 100%;
 		height: 1.5px;
@@ -146,34 +138,54 @@
 		align-items: center;
 		margin-top: 1.5rem;
 	}
-
 	footer a {
 		padding-right: 1rem;
 		color: #333;
 	}
+	:global(.underline) {
+		text-decoration: underline;
+	}
+
+	:global(.sidetext) {
+		transform: rotate(-90deg);
+		display: block;
+		margin-top: 2rem;
+		margin-left:-5rem;
+		height:1rem;
+		float: left;
+	}
+
+	:global(.maintext) {
+		position: relative;
+	}
+
+	:global(.handwriting) {
+		font-family: felt-tip-roman, sans-serif;
+		font-size: 1.1rem;
+	}
 
 	:global(.highlight-container, .highlight) {
-  position: relative;
-}
+		position: relative;
+	}
 
-:global(.highlight-container) {
-  display: inline-block;
-}
-:global(.highlight-container:before) {
-  content: " ";
-  display: block;
-  height: 70%;
-  width: 97%;
-  margin-left: -2px;
-  margin-right: -3px;
-  position: absolute;
-  background: #ffd50088;
-  transform: rotate(2deg);
-  top: 0px;
-  left: -1px;
-  border-radius: 20% 25% 20% 24%;
-  padding: 10px 3px 3px 10px;
-}
+	:global(.highlight-container) {
+		display: inline-block;
+	}
+	:global(.highlight-container:before) {
+		content: ' ';
+		display: block;
+		height: 70%;
+		width: 97%;
+		margin-left: -2px;
+		margin-right: -3px;
+		position: absolute;
+		background: #ffd50088;
+		transform: rotate(2deg);
+		top: 0px;
+		left: -1px;
+		border-radius: 20% 25% 20% 24%;
+		padding: 10px 3px 3px 10px;
+	}
 
 	@media (min-width: 600px) {
 		:global(.wrapper) {
@@ -190,6 +202,15 @@
 		}
 		:global(.wrapper) {
 			margin: 1.75rem 0rem 0.5rem 0rem;
+		}
+		:global(.sidetext) {
+			width:32%;
+			transform: rotate(0deg);
+			text-align: center;
+			margin-top: 0rem;
+			margin-left:-35%;
+
+
 		}
 
 		:global(.text7) {
