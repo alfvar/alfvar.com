@@ -105,7 +105,6 @@
 		font-weight: 700;
 		font-size: 1.1rem;
 		padding-top: 0.4rem;
-		color: rgb(100, 100, 100);
 	}
 	.vertline {
 		width: 0.15rem;
@@ -125,7 +124,6 @@
 
 	h3 {
 		padding-top: 1rem;
-		color: rgb(100, 100, 100);
 	}
 
 	.h4 {

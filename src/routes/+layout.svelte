@@ -54,8 +54,8 @@
 
 	.bg {
 		position: fixed;
-		top: -130rem;
-		left: -82rem;
+		top: -120rem;
+		left: -89.6rem;
 		width: 100rem;
 		height: 200rem;
 		background-color: #ff6865;
@@ -66,8 +66,9 @@
 	:global(.wrapper) {
 		padding: 1.5rem 2rem;
 		margin: 1.75rem 0 0.5rem;
-		background-color: #eee;
-		border-radius: 0.1em;
+		background-color: rgba(238, 238, 238, 0);
+		backdrop-filter: blur(20px);
+		border-radius: 0.2em;
 		position: relative;
 	}
 
@@ -198,7 +199,7 @@
 
 		.bg {
 			top: -130rem;
-			left: -90rem;
+			left: -60rem;
 			width: 100rem;
 			height: 200rem;
 		}
