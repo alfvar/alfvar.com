@@ -99,8 +99,6 @@
 		font-weight: 700;
 		font-size: 1.7rem;
 		margin: 0;
-		line-height: 0.01;
-
 		font-style: normal;
 	}
 	:global(h4) {
