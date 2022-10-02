@@ -5,8 +5,8 @@
 		<p class="text text7 textlarge white">
 			When Russia invaded Ukraine in the spring of 2022, everyone wanted to help, but the logistics
 			of humanitarian organizations only supported donations of money. <br /><br />Individuals who
-			wanted to contribute with items or their engagement had nowhere to turn
-			to. Why should all kindness go unappreciated?
+			wanted to contribute with items or their engagement had nowhere to turn to. Why should all
+			kindness go unappreciated?
 		</p>
 		<br />
 
@@ -30,7 +30,7 @@
 				(hopefully) temporary use case. HighFive wanted to create a platform where people could find
 				ways to help, and organizations could find people to help them. This would happen through
 				requests for items and skills, and individuals would fulfill them. A few initial questions
-				immediately came to mind:
+				immediately came to mind regarding this concept:
 			</p>
 		</div>
 		<div class="text text25">
@@ -50,14 +50,14 @@
 				Following some desktop research, we learned that most humanitarian organizations actually
 				contributed in other countries, rather than aiding Swedish refugees when they have arrived
 				here. Since money is relatively easy to move, individuals didn't receive the opportunity to
-				contribute with other things. The question remained, why should all these people who were
-				willing to contribute go unappreciated?
+				contribute with other things. Though the question remained, why should all these people who
+				were willing to contribute go unappreciated?
 			</p>
 			<p>
 				Since the brief was rather loosely defined, we decided to discuss a more defined problem
-				specification together with HighFive. We discussed what the unique value proposition would
-				be appropriate compared to existing services, and concluded that the concept shouldn't be
-				constrained to Halmstad county.
+				specification together with the client. We discussed what an unique value proposition would
+				be and compared the concept to existing services. From this we concluded that the concept
+				shouldn't be constrained to Halmstad county.
 			</p>
 			<p>
 				The goal as now clearly defined. We wanted to create a platform that would <span
@@ -67,10 +67,23 @@
 				people to fulfill them. It was also important that the platform would make it easier for people
 				to find out what they could do to help.
 			</p>
+			<p>
+				Further desktop research ensured we had a good understanding of the process of aiding
+				refugees and the stakeholders involved. This made it clear that we needed to focus on
+				specific touchpoints in the process, since several organizations are involved in the
+				process.
+			</p>
+			<p>
+				We also published an online survey to grasp the public's attitude towards aiding refugees,
+				which we successfully collected. This data didn't provide any new insights. Make sure you
+				know the purpose of your research!
+			</p>
 			<h3 class="handwriting sidetext">Week 2</h3>
-			<h3>Finding the right context</h3>
-
-
+			<h3>Identifying stakeholders</h3>
+			<p>
+				Since the more obvious stakeholders of the concept had different needs and interests, we
+				decided to make maps of their journeys toward a successfully executed activity or donation.
+			</p>
 		</div>
 	</div>
 </div>

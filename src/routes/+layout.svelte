@@ -21,6 +21,8 @@
 </svelte:head>
 
 <page-wrapper>
+	<div class="bg" />
+
 	<header>
 		<Header />
 	</header>
@@ -50,6 +52,17 @@
 		margin-top: 3rem;
 	}
 
+	.bg {
+		position: fixed;
+		top: -130rem;
+		left: -82rem;
+		width: 100rem;
+		height: 200rem;
+		background-color: #ff6865;
+		border-radius: 50%;
+		z-index: -1;
+	}
+
 	:global(.wrapper) {
 		padding: 1.5rem 2rem;
 		margin: 1.75rem 0 0.5rem;
@@ -62,9 +75,8 @@
 		color: #333;
 		font-family: minion-pro, serif;
 		font-style: normal;
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
-
 
 	:global(h1) {
 		color: var(--theme-color);
@@ -152,8 +164,8 @@
 		transform: rotate(-90deg);
 		display: inline;
 		margin-top: 2rem;
-		margin-left:-3.5rem;
-		height:1rem;
+		margin-left: -3.5rem;
+		height: 1rem;
 		float: left;
 	}
 
@@ -166,14 +178,15 @@
 		font-size: 1.1rem;
 	}
 
-
 	@media (min-width: 600px) {
 		:global(.wrapper) {
 			margin: 1.75rem 3rem 0.5rem;
 		}
 		:global(.sidetext) {
-			margin-left:-4rem;
-
+			margin-left: -4rem;
+		}
+		:global(p) {
+			font-size: 1.3rem;
 		}
 	}
 
@@ -181,21 +194,26 @@
 		page-wrapper {
 			display: flex;
 			height: fit-content;
-			overflow: clip;
+			overflow: hidden;
 			align-items: flex-start;
+		}
+
+		.bg {
+			top: -130rem;
+			left: -90rem;
+			width: 100rem;
+			height: 200rem;
 		}
 		:global(.wrapper) {
 			margin: 1.75rem 0rem 0.5rem 0rem;
 		}
 		:global(.sidetext) {
-			margin-left:-5rem;
-			width:32%;
+			margin-left: -5rem;
+			width: 32%;
 			transform: rotate(0deg);
 			text-align: center;
 			margin-top: 0rem;
-			margin-left:-35%;
-
-
+			margin-left: -35%;
 		}
 
 		:global(.text7) {

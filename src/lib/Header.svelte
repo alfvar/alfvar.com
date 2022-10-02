@@ -71,6 +71,10 @@
 	}
 
 	@media (min-width: 1200px) {
+		.navbar-wrapper {
+			height: 100vh;
+		}
+
 		.topnav {
 			display: block;
 			width: fit-content;
