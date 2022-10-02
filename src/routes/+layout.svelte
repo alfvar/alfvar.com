@@ -64,6 +64,8 @@
 		font-style: normal;
 		font-size: 1.3rem;
 	}
+
+
 	:global(h1) {
 		color: var(--theme-color);
 		font-size: 4rem;
@@ -148,9 +150,9 @@
 
 	:global(.sidetext) {
 		transform: rotate(-90deg);
-		display: block;
+		display: inline;
 		margin-top: 2rem;
-		margin-left:-5rem;
+		margin-left:-3.5rem;
 		height:1rem;
 		float: left;
 	}
@@ -191,6 +193,10 @@
 		:global(.wrapper) {
 			margin: 1.75rem 3rem 0.5rem;
 		}
+		:global(.sidetext) {
+			margin-left:-4rem;
+
+		}
 	}
 
 	@media (min-width: 1200px) {
@@ -204,6 +210,7 @@
 			margin: 1.75rem 0rem 0.5rem 0rem;
 		}
 		:global(.sidetext) {
+			margin-left:-5rem;
 			width:32%;
 			transform: rotate(0deg);
 			text-align: center;

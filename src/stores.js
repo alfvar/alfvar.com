@@ -3,7 +3,7 @@ import { readable } from 'svelte/store';
 export const cards = readable([
     {
         "title": "Make a Difference",
-        "description": "Enabling humanitarian organisations to request support from individuals through a simple interface.",
+        "description": "In a team of 6 students we tried to bridge the needs of humanitarian organizations and people's will to contribute with donations of items or engagement.",
         "url": "make_a_difference"
 
     }
