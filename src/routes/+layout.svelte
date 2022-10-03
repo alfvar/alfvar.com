@@ -68,6 +68,8 @@
 		margin: 1.75rem 0 0.5rem;
 		background-color: rgba(238, 238, 238, 0);
 		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+
 		border-radius: 0.2em;
 		position: relative;
 	}
