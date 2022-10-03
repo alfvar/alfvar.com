@@ -67,9 +67,11 @@
 		padding: 1.5rem 2rem;
 		margin: 1.75rem 0 0.5rem;
 		background-color: rgba(238, 238, 238, 0);
-		backdrop-filter: blur(20px);
-		-webkit-backdrop-filter: blur(20px);
-
+		backdrop-filter: blur(40px);
+		-webkit-backdrop-filter: blur(40px);
+		border-style: solid;
+		border-color: rgba(255, 255, 255, 0.1);
+		border-width: 0.2rem;
 		border-radius: 0.2em;
 		position: relative;
 	}
@@ -142,7 +144,7 @@
 	}
 	:global(.divider) {
 		width: 100%;
-		height: 1.5px;
+		height: 0.2rem;
 		margin: 2rem auto;
 		background-color: #333;
 	}
@@ -165,7 +167,7 @@
 		transform: rotate(-90deg);
 		display: inline;
 		margin-top: 2rem;
-		margin-left: -3.5rem;
+		margin-left: -4.25rem;
 		height: 1rem;
 		float: left;
 	}
