@@ -21,11 +21,11 @@
 </svelte:head>
 
 <page-wrapper>
-	<div class="bg" />
 
 	<header>
 		<Header />
 	</header>
+	<div class="bg" />
 
 	<main>
 		<slot />
@@ -66,7 +66,6 @@
 	:global(.wrapper) {
 		padding: 1.5rem 2rem;
 		margin: 1.75rem 0 0.5rem;
-		background-color: rgba(0, 0, 0, 0.04);
 		backdrop-filter: blur(40px);
 		-webkit-backdrop-filter: blur(40px);
 		border-style: solid;
@@ -75,6 +74,8 @@
 		border-radius: 0.2em;
 		position: relative;
 		max-width: 80rem;
+		box-shadow: 0 0 0.5rem 0.1em rgba(0, 0, 0, 0.09);
+
 	}
 
 	:global(p) {
@@ -199,7 +200,6 @@
 		page-wrapper {
 			display: flex;
 			height: fit-content;
-			overflow: hidden;
 			align-items: flex-start;
 		}
 
@@ -249,4 +249,5 @@
 			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}
+	
 </style>

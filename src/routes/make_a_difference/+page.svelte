@@ -118,10 +118,10 @@
 	.picture {
 		display: block;
 		object-fit: cover;
-		height: 20rem;
 		width: 100%;
 		margin: 4rem auto 0;
 		border-radius: 0.2em;
+		box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
 	}
 	li {
 		font-style: normal;

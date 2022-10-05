@@ -35,6 +35,7 @@
 	.navbar-wrapper {
 		text-align: center;
 		margin: auto;
+
 	}
 	.logo {
 		margin: auto;
