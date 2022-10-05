@@ -42,7 +42,6 @@
 		margin-top: -0.4rem;
 		margin-bottom: -1rem;
 		display: block;
-		text-shadow: -0.15rem -0.15rem 0 #fff, 0.15rem -0.15rem 0 #fff, -0.15rem 0.15rem 0 #fff, 0.15rem 0.15rem 0 #fff;
 
 	}
 

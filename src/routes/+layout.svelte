@@ -66,7 +66,7 @@
 	:global(.wrapper) {
 		padding: 1.5rem 2rem;
 		margin: 1.75rem 0 0.5rem;
-		background-color: rgba(238, 238, 238, 0);
+		background-color: rgba(0, 0, 0, 0.04);
 		backdrop-filter: blur(40px);
 		-webkit-backdrop-filter: blur(40px);
 		border-style: solid;
@@ -74,6 +74,7 @@
 		border-width: 0.2rem;
 		border-radius: 0.2em;
 		position: relative;
+		max-width: 80rem;
 	}
 
 	:global(p) {
@@ -154,6 +155,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 1.5rem;
+		max-width: 80rem;
 	}
 	footer a {
 		padding-right: 1rem;
@@ -203,7 +205,7 @@
 
 		.bg {
 			top: -130rem;
-			left: -60rem;
+			left: -58rem;
 			width: 100rem;
 			height: 200rem;
 		}

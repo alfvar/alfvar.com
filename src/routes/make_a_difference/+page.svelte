@@ -1,3 +1,7 @@
+<script>
+	import pic1 from '$lib/img/make_a_difference_1.png';
+</script>
+
 <div class="wrapper">
 	<div class="dark">
 		<h2 class="white">Enabling for aid</h2>
@@ -18,6 +22,16 @@
 		<h4 class="subtext handwriting">time: 5 weeks | team: 6 people</h4>
 	</div>
 	<div />
+	<div class="text7">
+		<img
+			src={pic1}
+			alt="A screenshot showing the landing page for the finished concept."
+			class="picture text7"
+		/>
+		<p class="text text25 subtext smalltext">
+			The landing page for the concept. Text elements have been translated from swedish.
+		</p>
+	</div>
 
 	<div class="maintext">
 		<div class="text text25">
@@ -25,7 +39,7 @@
 
 			<p class="text longtext">
 				The client for this project was HighFive, an independent growth department of Halmstad
-				county in Sweden. Their response to the invasion was quick, so this project was very
+				municipality in Sweden. Their response to the invasion was quick, so this project was very
 				relevant to current events. Despite this, the implications could go way further than this
 				(hopefully) temporary use case. HighFive wanted to create a platform where people could find
 				ways to help, and organizations could find people to help them. This would happen through
@@ -75,8 +89,8 @@
 			</p>
 			<p>
 				We also published an online survey to grasp the public's attitude towards aiding refugees,
-				which we successfully collected. This data didn't provide any new insights. Make sure you
-				know the purpose of your research!
+				which we successfully collected. This data didn't provide any new insights, but we still
+				learned what not to pursue further. All data gathering still leads somewhere.
 			</p>
 			<h3 class="handwriting sidetext">Week 2</h3>
 			<h3>Identifying stakeholders</h3>
@@ -89,17 +103,26 @@
 </div>
 
 <style>
+	.wrapper {
+		padding: 0;
+	}
 	.white {
 		color: #fff;
 	}
 
 	.dark {
 		background-color: rgb(20, 20, 20);
-		margin: -1.5rem -2rem 2rem;
-		padding: 2rem 0;
+		padding: 4rem 0rem 4rem 0rem;
 		border-radius: 0.1em;
 	}
-
+	.picture {
+		display: block;
+		object-fit: cover;
+		height: 20rem;
+		width: 100%;
+		margin: 4rem auto 0;
+		border-radius: 0.2em;
+	}
 	li {
 		font-style: normal;
 		font-weight: 700;
@@ -111,6 +134,9 @@
 		background-color: rgb(100, 100, 100);
 		height: 20rem;
 		margin: 0 1rem;
+	}
+	.maintext {
+		margin-top: 6rem;
 	}
 	.textlarge {
 		font-size: 1.5rem;

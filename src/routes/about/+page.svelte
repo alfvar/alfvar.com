@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <h2>About</h2>
-    <p>This is the about page.</p>
+    <h2>This is the about page</h2>
+    <p> </p>
 </div>
 
