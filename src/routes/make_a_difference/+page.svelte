@@ -33,71 +33,80 @@
 		</p>
 	</div>
 
-	<div class="maintext">
-		<div class="text text25">
+	<div class="maintext segment">
+		<div class="text text25 ">
 			<h3>Background</h3>
 
 			<p class="text longtext">
 				The client for this project was HighFive, an independent growth department of Halmstad
-				municipality in Sweden. Their response to the invasion was quick, so this project was very
-				relevant to current events. Despite this, the implications could go way further than this
-				(hopefully) temporary use case. HighFive wanted to create a platform where people could find
-				ways to help, and organizations could find people to help them. This would happen through
-				requests for items and skills, and individuals would fulfill them. A few initial questions
+				municipality in Sweden. They wanted to create a platform where people could find ways to
+				help, and organizations could find people to help them. This would happen through requests
+				for items and skills, and individuals would fulfill them. A few initial questions
 				immediately came to mind regarding this concept:
 			</p>
-		</div>
-		<div class="text text25">
 			<ul class="handwriting">
 				<li class="handwriting">Why doesn't this service exist?</li>
 				<li class="handwriting">What do the humanitarian organizations want?</li>
 				<li class="handwriting">What do the helpers want?</li>
 			</ul>
 		</div>
+		<div class="segment">
+			<div class="text text25">
+				<h3 class="handwriting sidetext"><aside>Week 1</aside></h3>
 
-		<div class="text text25">
-			<h3 class="handwriting sidetext"><aside>Week 1</aside></h3>
+				<h3>Making sense of things</h3>
 
-			<h3>Making sense of things</h3>
+				<p>
+					Following some desktop research, we learned that most humanitarian organizations actually
+					contributed in other countries, rather than aiding Swedish refugees when they have arrived
+					here. This was the main reason why only monetary donations were accepted.
+				</p>
 
-			<p>
-				Following some desktop research, we learned that most humanitarian organizations actually
-				contributed in other countries, rather than aiding Swedish refugees when they have arrived
-				here. Since money is relatively easy to move, individuals didn't receive the opportunity to
-				contribute with other things. Though the question remained, why should all these people who
-				were willing to contribute go unappreciated?
+				<div class="text">
+					<ul class="handwriting">
+						<li
+							class="handwriting"
+							style="  text-decoration: line-through;
+			"
+						>
+							Why doesn't this service exist?
+						</li>
+						<li class="handwriting">What do the humanitarian organizations want?</li>
+						<li class="handwriting">What do the helpers want?</li>
+					</ul>
+				</div>
+
+				<p>
+					At this point I called up the swedish Red Cross organization to see what type of
+					activities they were carrying out locally in Sweden. Here we learned a valuable lesson:
+					humanitarian organizations are <b>busy.</b> The person on the other end asked us to e-mail
+					our questions, and unfortunately we didn't get a response during the five weeks of the project.
+					However, the phone call also gave us the contact details to an employee of Halmstad municipality
+					who handled similar cases. There we had greater success, and we were able to get insights on
+					how refugees are processed in Sweden and what needs they might have. Progress!
+				</p>
+			</div>
+			<p class="text7 handwriting" style="width:50%; text-align:right; margin-left:auto;">
+				In a longer project and with better planning we could have asked the Red Cross for a phone
+				call ahead of time!
 			</p>
-			<p>
-				Since the brief was rather loosely defined, we decided to discuss a more defined problem
-				specification together with the client. We discussed what an unique value proposition would
-				be and compared the concept to existing services. From this we concluded that the concept
-				shouldn't be constrained to Halmstad county.
-			</p>
-			<p>
-				The goal as now clearly defined. We wanted to create a platform that would <span
-					class="underline">make it easier</span
-				>
-				for humanitarian organizations <span class="underline">to share help requests</span> and for
-				people to fulfill them. It was also important that the platform would make it easier for people
-				to find out what they could do to help.
-			</p>
-			<p>
-				Further desktop research ensured we had a good understanding of the process of aiding
-				refugees and the stakeholders involved. This made it clear that we needed to focus on
-				specific touchpoints in the process, since several organizations are involved in the
-				process.
-			</p>
-			<p>
-				We also published an online survey to grasp the public's attitude towards aiding refugees,
-				which we successfully collected. This data didn't provide any new insights, but we still
-				learned what not to pursue further. All data gathering still leads somewhere.
-			</p>
-			<h3 class="handwriting sidetext">Week 2</h3>
-			<h3>Identifying stakeholders</h3>
-			<p>
-				Since the more obvious stakeholders of the concept had different needs and interests, we
-				decided to make maps of their journeys toward a successfully executed activity or donation.
-			</p>
+
+			<div class="text25 segment">
+				<ul class="handwriting">
+					<li
+						class="handwriting"
+						style="  text-decoration: line-through;
+		"
+					>
+						Why doesn't this service exist?
+					</li>
+					<li class="handwriting" style="text-decoration: line-through;">
+						What do the humanitarian organizations want?
+					</li>
+					<li class="handwriting">What do the helpers want?</li>
+				</ul>
+			</div>
+			<div class="text25 segment" />
 		</div>
 	</div>
 </div>
@@ -108,6 +117,10 @@
 	}
 	.white {
 		color: #fff;
+	}
+
+	.segment {
+		padding-top: 8rem;
 	}
 
 	.dark {
@@ -135,9 +148,7 @@
 		height: 20rem;
 		margin: 0 1rem;
 	}
-	.maintext {
-		margin-top: 6rem;
-	}
+
 	.textlarge {
 		font-size: 1.5rem;
 		text-align: center;

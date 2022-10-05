@@ -181,6 +181,7 @@
 
 	:global(.handwriting) {
 		font-family: felt-tip-roman, sans-serif;
+		font-weight: 700;
 		font-size: 1.1rem;
 	}
 
