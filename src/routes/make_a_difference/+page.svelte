@@ -33,7 +33,7 @@
 		</p>
 	</div>
 
-	<div class="maintext segment">
+	<div class="segment">
 		<div class="text text25 ">
 			<h3>Background</h3>
 
@@ -41,73 +41,78 @@
 				The client for this project was HighFive, an independent growth department of Halmstad
 				municipality in Sweden. They wanted to create a platform where people could find ways to
 				help, and organizations could find people to help them. This would happen through requests
-				for items and skills, and individuals would fulfill them. A few initial questions
-				immediately came to mind regarding this concept:
+				for items and skills, and individuals would fulfill them.
+				<br />
+				<br />
+				The idea for the project came from the idea that Ukranian refugees in Sweden put a new load on
+				the refugee support systems, but the concept we developed can be generalized beyond this (hopefully!)
+				temporary use case.
 			</p>
+		</div>
+	</div>
+	<div class="segment">
+		<div class="text text25 ">
+			<h3>My role</h3>
+			<p>
+				I was the project manager for this project, and I was responsible for time management and
+				collaboration both with the client and internally. In Halmstad University's Design Studio projects, the
+				team (usually 4-6 people) collaborate on all parts of the project, even though each member has a particular responsibility. In this case it means
+				I was part of research, ideation, service design concept and UI design.
+		</div>
+	</div>
+	<div class="segment">
+		<div class="text text25">
+			<h3 class="handwriting sidetext"><aside>Week 1</aside></h3>
+
+			<h3>Making sense of things</h3>
+
+			<p>Based on the brief, a few initial questions came to mind:</p>
 			<ul class="handwriting">
 				<li class="handwriting">Why doesn't this service exist?</li>
 				<li class="handwriting">What do the humanitarian organizations want?</li>
 				<li class="handwriting">What do the helpers want?</li>
 			</ul>
-		</div>
-		<div class="segment">
-			<div class="text text25">
-				<h3 class="handwriting sidetext"><aside>Week 1</aside></h3>
-
-				<h3>Making sense of things</h3>
-
-				<p>
-					Following some desktop research, we learned that most humanitarian organizations actually
-					contributed in other countries, rather than aiding Swedish refugees when they have arrived
-					here. This was the main reason why only monetary donations were accepted.
-				</p>
-
-				<div class="text">
-					<ul class="handwriting">
-						<li
-							class="handwriting"
-							style="  text-decoration: line-through;
-			"
-						>
-							Why doesn't this service exist?
-						</li>
-						<li class="handwriting">What do the humanitarian organizations want?</li>
-						<li class="handwriting">What do the helpers want?</li>
-					</ul>
-				</div>
-
-				<p>
-					At this point I called up the swedish Red Cross organization to see what type of
-					activities they were carrying out locally in Sweden. Here we learned a valuable lesson:
-					humanitarian organizations are <b>busy.</b> The person on the other end asked us to e-mail
-					our questions, and unfortunately we didn't get a response during the five weeks of the project.
-					However, the phone call also gave us the contact details to an employee of Halmstad municipality
-					who handled similar cases. There we had greater success, and we were able to get insights on
-					how refugees are processed in Sweden and what needs they might have. Progress!
-				</p>
-			</div>
-			<p class="text7 handwriting" style="width:50%; text-align:right; margin-left:auto;">
-				In a longer project and with better planning we could have asked the Red Cross for a phone
-				call ahead of time!
+			<p>
+				Following some desktop research, we learned that most humanitarian organizations actually
+				contributed in other countries, rather than aiding Swedish refugees when they have arrived
+				here. This was the main reason why only monetary donations were accepted.
 			</p>
 
-			<div class="text25 segment">
-				<ul class="handwriting">
-					<li
-						class="handwriting"
-						style="  text-decoration: line-through;
-		"
-					>
-						Why doesn't this service exist?
-					</li>
-					<li class="handwriting" style="text-decoration: line-through;">
-						What do the humanitarian organizations want?
-					</li>
-					<li class="handwriting">What do the helpers want?</li>
-				</ul>
-			</div>
-			<div class="text25 segment" />
+			<p>
+				At this point I called up the swedish Red Cross organization to see what type of activities
+				they were carrying out locally in Sweden. Here we learned a valuable lesson: humanitarian
+				organizations are <b>busy.</b> The person on the other end asked us to e-mail our questions,
+				and unfortunately we didn't get a response during the five weeks of the project. However, the
+				phone call also gave us the contact details to an employee of Halmstad municipality who handled
+				similar cases. There we had greater success, and we were able to get insights on how refugees
+				are processed in Sweden and what needs they might have. Progress!
+			</p>
+			<p>
+				To figure out what the helpers wanted, we developed a survey to underestand their attitudes
+				towards helping humanitarian organizations. It was published on social media targeting the
+				general public, and we got 50 responses. This served as proof that there was a legitimate
+				interest in helping humanitarian organizations, and thus all our initial questions were
+				answered.
+			</p>
 		</div>
+	</div>
+
+	<p
+		class="text7 handwriting"
+		style="width:50%; text-align:right; margin-left:auto; color:black; padding-top:2rem;"
+	>
+		In a longer project and with better planning we could have asked the Red Cross for a phone call
+		ahead of time!
+	</p>
+
+	<div class="text25 segment">
+		<h3 class="handwriting sidetext"><aside>Week 2</aside></h3>
+		<h3>Bridging everyone's interests</h3>
+
+		<p>
+			With the initial questions answered, we were ready to start the ideation process. We started
+			by
+		</p>
 	</div>
 </div>
 

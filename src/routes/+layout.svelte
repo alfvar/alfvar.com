@@ -21,7 +21,6 @@
 </svelte:head>
 
 <page-wrapper>
-
 	<header>
 		<Header />
 	</header>
@@ -75,7 +74,6 @@
 		position: relative;
 		max-width: 80rem;
 		box-shadow: 0 0 0.5rem 0.1em rgba(0, 0, 0, 0.09);
-
 	}
 
 	:global(p) {
@@ -250,5 +248,4 @@
 			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}
-	
 </style>
