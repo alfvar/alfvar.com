@@ -4,7 +4,6 @@
 	import mkd_futurestate from '$lib/img/mkd_futurestate.png';
 	import mkd_sitemaps from '$lib/img/mkd_sitemaps.png';
 	import mkd_lofihomepage from '$lib/img/mkd_lofihomepage.png';
-
 </script>
 
 <div class="wrapper">
@@ -43,15 +42,15 @@
 			<h3>Background</h3>
 
 			<p class="text longtext">
-				The client for this project was HighFive, an independent growth department of Halmstad
+				The client for this project was HighFive, an independent innovation department of Halmstad
 				municipality in Sweden. They wanted to create a platform where people could find ways to
 				help, and organizations could find people to help them. This would happen through requests
-				for items and skills, and individuals would fulfill them.
+				for items and skills, and individuals would fulfill these requests.
 			</p>
 			<p>
-				The idea for the project came from the idea that Ukranian refugees in Sweden put a new load
-				on the refugee support systems, but the concept we developed can be generalized beyond this
-				(hopefully!) temporary use case.
+				The idea for the project came from the idea that Ukranian refugees in Sweden put an
+				unforseen load on the refugee support systems, but the concept we developed can be
+				generalized beyond this (hopefully!) temporary use case.
 			</p>
 		</div>
 	</div>
@@ -74,8 +73,8 @@
 
 		<p>
 			Since the team didn't have any experience with this topic, we decided to begin the project
-			with some desktop research. Based on the initial brief we developed three questions that we
-			were trying to answer:
+			with some thorough desktop research. Based on the initial brief we developed three questions
+			that we were trying to answer:
 		</p>
 		<ul class="handwriting">
 			<li class="handwriting">Why doesn't this service exist?</li>
@@ -86,7 +85,7 @@
 			We learned about the goals of humanitarian organizations and how they differ from eachother.
 			Most of them operated both in Sweden and in countries in need of aid. Signing up as a
 			volunteer also meant similar but slightly different requirements. They usually included
-			training that was specific to the organization, and a background check. 
+			training that was specific to the organization, and a background check.
 		</p>
 	</div>
 	<div class="segment text text25">
@@ -126,15 +125,19 @@
 			The survey was then was published on social media targeting the general public. The responses
 			served as proof that there was a legitimate interest in helping humanitarian organizations.
 			Further, slightly more than half of the respondents would rather participate than host
-			activities themselves. As for the municipality, the respondents didn't see them playing a
-			significant role in the process.
+			activities themselves. In relation to the insights this gave us, the survey was way too broad.
+			This was because we weren't sure what kind of data we were looking for.
 		</p>
 	</div>
+	<br />
+	<aside
+		class="text7 handwriting"
+		style="max-width:50%; float:left; text-align:left; margin-left:1rem;"
+	>
+		Lesson: Don't use quantitative methods when you don't already know what you're looking for!
+	</aside>
 	<div class="text25 segment">
-		<h3>
-			A twist <aside class="handwriting">This service does exist!</aside>
-		</h3>
-
+		<h3>This service already exists</h3>
 		<p>
 			After a strong start, we ran into a roadbump. Further iterating on our desktop research we
 			found the website Volontärbyrån, or the Volunteer Bureau. Our service already existed. This
@@ -176,8 +179,8 @@
 		<br /> <br />
 		<p>
 			Based on conversations with our contact at Halmstad municipality and our desktop research, we
-			then modelled a journey map of sorts for the different stakeholders. Based on this we could
-			see what stage of the process this crowdsourced aid concept could intervene:
+			then modelled a journey map of sorts for the different stakeholders. Using this we could see
+			what stage of the process this crowdsourced aid concept could best intervene:
 		</p>
 	</div>
 	<div class="text7">
@@ -212,11 +215,10 @@
 			</li>
 			<li>A way for organizations to crowdsource labor for good causes</li>
 		</ul>
-		<p>This could then be used as a foundation for further development of the concept.</p>
-	</div>
-	<div class="text25">
 		<h3 class="handwriting sidetext"><aside>Week 3</aside></h3>
-		<br />
+	</div>
+
+	<div class="text25">
 		<p>
 			This broad feature set was further specified into a list of requirements. This formed the
 			basis of flowcharts defining the action flow for each feature, which in turn was the
@@ -231,11 +233,13 @@
 		</p>
 	</div>
 	<div class="text25 segment">
-		<img src={mkd_lofihomepage} alt="The first iteration of the landing page for the concept." class="drawing" />
-
-		</div>
-		<div class="text25 segment">
-</div>
+		<img
+			src={mkd_lofihomepage}
+			alt="The first iteration of the landing page for the concept."
+			class="drawing"
+		/>
+	</div>
+	<div class="text25 segment" />
 </div>
 
 <style>
