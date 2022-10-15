@@ -76,7 +76,7 @@
 		box-shadow: 0 0 0.5rem 0.1em rgba(0, 0, 0, 0.09);
 	}
 
-	:global(p) {
+	:global(p, .p) {
 		color: #333;
 		font-family: minion-pro, serif;
 		font-style: normal;
@@ -168,9 +168,18 @@
 		transform: rotate(-90deg);
 		display: inline;
 		margin-top: 2rem;
-		margin-left: -4.25rem;
+		margin-left: -3.4rem;
 		height: 1rem;
 		float: left;
+	}
+
+	:global(aside, .aside) {
+		text-align: right;
+		display: inline;
+		float: right;
+		position: relative;
+		max-width: 75vw;
+		font-size: 16px;
 	}
 
 	:global(.maintext) {
@@ -187,9 +196,11 @@
 		:global(.wrapper) {
 			margin: 1.75rem 3rem 0.5rem;
 		}
+
 		:global(.sidetext) {
-			margin-left: -4rem;
+			margin-left: -8vw;
 		}
+
 		:global(p) {
 			font-size: 1.3rem;
 		}
