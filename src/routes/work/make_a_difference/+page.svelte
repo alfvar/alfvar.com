@@ -278,13 +278,6 @@
 		padding-top: 0.4rem;
 	}
 
-	.vertline {
-		width: 0.15rem;
-		background-color: rgb(100, 100, 100);
-		height: 20rem;
-		margin: 0 1rem;
-	}
-
 	.textlarge {
 		font-size: 1.5rem;
 		text-align: center;
@@ -298,11 +291,5 @@
 	h3 {
 		padding-top: 1rem;
 		margin-bottom: -0.75rem;
-	}
-
-	.h4 {
-		font-family: forma-djr-text, sans-serif;
-		font-weight: 400;
-		font-style: normal;
 	}
 </style>

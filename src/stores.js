@@ -4,7 +4,9 @@ export const cards = readable([
     {
         "title": "Make a Difference",
         "description": "Bridging the needs of humanitarian organizations and people's will to contribute.",
-        "url": "make_a_difference"
+        "url": "/work/make_a_difference"
+        
+
 
     }
 

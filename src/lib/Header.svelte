@@ -1,23 +1,24 @@
 <script>
-	import { page } from '$app/stores';
-
 	import { onMount } from 'svelte';
 
-	let links = null;
+	import { page } from '$app/stores';
 
-	onMount(() => {
-		links = document.querySelectorAll('.topnav a');
-	});
+	$: currentPage = $page.url.pathname; //should be reactive
 
-	$: if (links != null) {
-		links.forEach((link) => {
-			if (link.getAttribute('id') === $page.url.pathname) {
-				link.classList.add('active');
-			} else {
-				link.classList.remove('active');
-			}
-		});
-	}
+	const menus = [
+		{
+			name: 'Work',
+			path: '/work'
+		},
+		{
+			name: 'Play',
+			path: '/play'
+		},
+		{
+			name: 'About',
+			path: '/about'
+		}
+	];
 </script>
 
 <div class="navbar-wrapper">
@@ -25,9 +26,17 @@
 	<h4>is studying Digital Design and Innovation in Halmstad</h4>
 	<div class="divider" />
 	<ul class="topnav">
-		<a id="/" href="/"><li>Portfolio</li></a>
-		<a id="/artwork" href="artwork"><li>Artwork</li></a>
-		<a id="/about" href="about"><li>About</li></a>
+		{#each menus as { path, name }}
+			<li>
+				<a
+					data-sveltekit-prefetch
+					style="font-weight:bold"
+					class:active={path !== '/' ? currentPage.match(path) : path === currentPage}
+					href={path}>{name}
+					</a
+				>
+			</li>
+		{/each}
 	</ul>
 </div>
 
@@ -35,7 +44,6 @@
 	.navbar-wrapper {
 		text-align: center;
 		margin: auto;
-
 	}
 	.logo {
 		margin: auto;
@@ -43,7 +51,6 @@
 		margin-top: -0.4rem;
 		margin-bottom: -1rem;
 		display: block;
-
 	}
 
 	.divider {
