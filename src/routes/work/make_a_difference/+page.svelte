@@ -259,14 +259,7 @@
 		padding: 4rem 0rem 4rem 0rem;
 		border-radius: 0.1em;
 	}
-	.picture {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		margin: 4rem auto 0;
-		border-radius: 0.2em;
-		box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
-	}
+
 
 	.drawing {
 		display: block;

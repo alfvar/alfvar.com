@@ -13,7 +13,8 @@
 		data-color="#26B0A1"
 		data-position="Right"
 		data-x_margin="16"
-		data-y_margin="16">
+		data-y_margin="16"
+	>
 	</script>
 	<title>Alfvar</title>
 
@@ -74,6 +75,15 @@
 		position: relative;
 		max-width: 80rem;
 		box-shadow: 0 0 0.5rem 0.1em rgba(0, 0, 0, 0.09);
+	}
+
+	:global(.picture) {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		margin: 4rem auto 0;
+		border-radius: 0.2em;
+		box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
 	}
 
 	:global(p, .p) {

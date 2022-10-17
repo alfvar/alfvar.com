@@ -1,26 +1,37 @@
 <script>
 	import art1 from '$lib/img/1.png';
+	import art2 from '$lib/img/2.png';
+	import art3 from '$lib/img/3.png';
+	import art4 from '$lib/img/4.png';
 </script>
 
 <div class="wrapper">
-	<h2>Artwork</h2>
-	<div class="grid">
-
+	<h2>Visual</h2>
+	<div class="container">
+		<div class="box"><img src={art3} alt="art3" /></div>
+		<div class="box"><img src={art1} alt="art1" /></div>
+		<div class="box"><img src={art2} alt="art2" /></div>
+		<div class="box"><img src={art4} alt="art4" /></div>
 	</div>
 </div>
 
 <style>
-	.grid {
-		margin: 1rem 0rem;
+	.container {
+		margin: 0rem;
 		display: flex;
-}
+		flex-wrap: wrap;
+		margin: 0 -0.5rem;
+	}
 
-	.gridItem {		
-		margin: -0.1rem;
-		width: 15rem;
-		height: 15rem;
-		border-style: solid;
-		border-color: rgba(255, 255, 255, 0.1);
-		border-radius: 0.2rem;
+	.box {
+		flex: 1 0 10rem;
+		padding: 0.5em;
+		justify-content: space-between;
+	}
+
+	.box img {
+		width: 100%;
+		height: 100%;
+		box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
 	}
 </style>

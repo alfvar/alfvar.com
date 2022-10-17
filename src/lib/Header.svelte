@@ -32,9 +32,9 @@
 					data-sveltekit-prefetch
 					style="font-weight:bold"
 					class:active={path !== '/' ? currentPage.match(path) : path === currentPage}
-					href={path}>{name}
-					</a
-				>
+					href={path}
+					>{name}
+				</a>
 			</li>
 		{/each}
 	</ul>
@@ -59,10 +59,10 @@
 	}
 	.topnav {
 		display: flex;
-		justify-content: center;
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
 		list-style: none;
+		width: 15rem;
 	}
 	.topnav li {
 		font-size: 1.2em;
