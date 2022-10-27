@@ -109,6 +109,8 @@
 		font-size: 3rem;
 		margin: 0;
 		letter-spacing: -1px;
+		line-height: 3.5rem;
+
 	}
 	:global(h3) {
 		font-family: forma-djr-text, sans-serif;
