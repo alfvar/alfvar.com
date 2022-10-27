@@ -87,6 +87,12 @@
 		box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
 	}
 
+	:global(.drawing) {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+	}
+
 	:global(p, .p) {
 		color: #333;
 		font-family: minion-pro, serif;

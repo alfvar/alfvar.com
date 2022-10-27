@@ -261,11 +261,7 @@
 	}
 
 
-	.drawing {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-	}
+
 	li {
 		font-style: normal;
 		padding-top: 0.4rem;
