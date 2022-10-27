@@ -31,10 +31,11 @@
 		<slot />
 		<footer>
 			<div>
-				<a class="smalltext" href="https://alfvar.gumroad.com/">Gumroad</a>
-				<a class="smalltext" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/"
-					>Linkedin</a
-				>
+				<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
+				<a class="twitter" href="https://twitter.com/alfvar_" />
+				<a class="gumroad" href="https://alfvar.gumroad.com/" />
+
+				<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 			</div>
 			<p class="smalltext">Website design and content © 2022 Alfvar Arvidsson</p>
 		</footer>
@@ -167,8 +168,29 @@
 		max-width: 80rem;
 	}
 	footer a {
-		padding-right: 1rem;
 		color: #333;
+		background-position: center, center;
+		background-repeat: no-repeat, no-repeat;
+		background-size: contain, contain;
+		padding: 0.75rem;
+		margin-right: 1rem;
+	}
+
+	footer .smalltext {
+		padding: 0;
+	}
+
+	footer .gumroad {
+		background-image: url('$lib/img/ico/gumroad.svg');
+		background-size: 1.5rem;
+	}
+
+	footer .linkedin {
+		background-image: url('$lib/img/ico/linkedin.svg');
+	}
+
+	footer .twitter {
+		background-image: url('$lib/img/ico/twitter.svg');
 	}
 	:global(.underline) {
 		text-decoration: underline;

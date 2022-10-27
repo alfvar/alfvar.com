@@ -1,8 +1,8 @@
 <script>
-	import art1 from '$lib/img/1.png';
-	import art2 from '$lib/img/2.png';
-	import art3 from '$lib/img/3.png';
-	import art4 from '$lib/img/4.png';
+	import art1 from '$lib/img/1.jpg';
+	import art2 from '$lib/img/2.jpg';
+	import art3 from '$lib/img/3.jpg';
+	import art4 from '$lib/img/4.jpg';
 </script>
 
 <div class="wrapper">
