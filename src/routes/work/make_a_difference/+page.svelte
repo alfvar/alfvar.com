@@ -103,7 +103,7 @@
 			insights on how refugees are processed in Sweden and what needs they might have. Progress!
 		</p>
 	</div>
-	<aside class="text7 handwriting" style="width:50%;">
+	<aside class="text7 handwriting" style="max-width:50%; margin-right:1rem;">
 		In a longer project and with better planning we could have asked the Red Cross for a phone call
 		ahead of time!
 	</aside>
@@ -146,7 +146,7 @@
 			otherwise, so I called in a meeting with our class supervisor.
 		</p>
 	</div>
-	<aside class="text7 handwriting" style="max-width:25%; margin-right:1rem;">
+	<aside class="text7 handwriting" style="max-width:25%; margin-right:1rem;margin-left:-1rem;">
 		Lesson: Good team spirit is absolutely <u>essential</u> to a good collaborative project.
 	</aside>
 	<div class="text25">
@@ -259,8 +259,6 @@
 		padding: 4rem 0rem 4rem 0rem;
 		border-radius: 0.1em;
 	}
-
-
 
 	li {
 		font-style: normal;

@@ -31,6 +31,7 @@
 
 <style>
 	.drawing {
+		margin-top:-0.5rem;
 		width: 12rem;
 		height: 20rem;
 		border-radius: 50%;

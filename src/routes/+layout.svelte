@@ -207,6 +207,7 @@
 		position: relative;
 		max-width: 75vw;
 		font-size: 16px;
+		
 	}
 
 	:global(.maintext) {
