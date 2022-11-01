@@ -3,7 +3,6 @@
 </script>
 
 <svelte:head>
-
 	<title>Alfvar</title>
 
 	<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css" />
@@ -25,7 +24,7 @@
 
 				<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 			</div>
-			<p class="smalltext">Website design and content © 2022 Alfvar Arvidsson</p>
+			<div><p class="smalltext">Website design and content © 2022 Alfvar Arvidsson</p></div>
 		</footer>
 	</main>
 </page-wrapper>
@@ -207,7 +206,6 @@
 		position: relative;
 		max-width: 75vw;
 		font-size: 16px;
-		
 	}
 
 	:global(.maintext) {
@@ -231,6 +229,14 @@
 
 		:global(p, .p) {
 			font-size: 1.3rem;
+		}
+	}
+
+	@media (min-width: 705px) {
+		footer {
+			flex-direction: row;
+			margin: 0 3rem;
+
 		}
 	}
 
