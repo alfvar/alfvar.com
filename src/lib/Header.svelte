@@ -11,8 +11,8 @@
 			path: '/work'
 		},
 		{
-			name: 'Play',
-			path: '/play'
+			name: 'Visuals',
+			path: '/visuals'
 		},
 		{
 			name: 'About',

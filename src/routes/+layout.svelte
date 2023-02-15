@@ -24,7 +24,7 @@
 
 				<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 			</div>
-			<div><p class="smalltext">Website design and content © 2022 Alfvar Arvidsson</p></div>
+			<div><p class="smalltext">Website design and content © 2023 Alfvar Arvidsson</p></div>
 		</footer>
 	</main>
 </page-wrapper>
