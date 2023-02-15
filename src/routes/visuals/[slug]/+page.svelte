@@ -26,6 +26,7 @@
 	.wrapper {
 		padding: 0rem;
         width:fit-content;
+		
 
 	}
 	.content {
@@ -53,15 +54,11 @@
 			align-items: center;
 		}
 		.wrapper {
-            margin-left:0;
-            margin-bottom: 1rem;
-            width:80vh
+			margin:auto;
+            width:80vh;
+			margin-bottom: 2rem;
 
 		}
-		img {
-		}
 
-        h3 {
-	}
 	}
 </style>
