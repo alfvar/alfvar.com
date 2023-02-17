@@ -23,7 +23,7 @@
 			University. The client is still real and this project evolved organically with the client.
 		</h4>
 		<br />
-		<h4 class="subtext handwriting">time: 5 weeks | team: 6 people</h4>
+		<h4 class="subtext handwriting">time: 5 weeks (full time) | team: 6 people</h4>
 	</div>
 	<div />
 	<div class="text7">
