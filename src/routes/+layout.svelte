@@ -18,9 +18,9 @@
 		<slot />
 		<footer>
 			<div>
-				<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
-				<a class="twitter" href="https://twitter.com/alfvar_" />
-				<a class="gumroad" href="https://alfvar.gumroad.com/" />
+				<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/"> </a>
+				<a class="twitter" href="https://twitter.com/alfvar_"> </a>
+				<a class="gumroad" href="https://alfvar.gumroad.com/"> </a>
 
 				<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 			</div>
