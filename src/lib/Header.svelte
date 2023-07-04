@@ -3,7 +3,7 @@
 
 	import { page } from '$app/stores';
 
-	$: currentPage = $page.url.pathname; //should be reactive
+	$: currentPage = $page.url.pathname; 
 
 	const menus = [
 		{
@@ -23,7 +23,7 @@
 
 <div class="navbar-wrapper">
 	<h1 class="logo">alfvar</h1>
-	<h4>is studying Digital Design and Innovation in Halmstad</h4>
+	<h4>is studying a Digital Design master at Chalmers</h4>
 	<div class="divider" />
 	<ul class="topnav">
 		{#each menus as { path, name }}

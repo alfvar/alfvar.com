@@ -1,4 +1,18 @@
 import { readable } from 'svelte/store';
+import { pb } from '$lib/pocketbase';
+import { onMount } from 'svelte';
+
+let posts = [];
+
+async function fetchData() {
+    const resultList = await pb.collection('portfolio_posts').getList(1, 20, {
+        sort: 'created'
+    });
+    posts = resultList.items;
+}
+onMount(() => {
+    fetchData();
+});
 
 export const cards = readable([
     {
