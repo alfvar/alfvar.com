@@ -1,5 +1,7 @@
 <script>
-    import Card from "$lib/Card.svelte";
-</script>
-
-<Card/>
+    import { onMount } from 'svelte';
+  
+    onMount(() => {
+      window.location.replace('/work');
+    });
+  </script>
