@@ -3,26 +3,36 @@
 	import { onMount } from 'svelte';
 
 	let posts = [];
+	let isLoading = true;
 
 	async function fetchData() {
 		const resultList = await pb.collection('portfolio_posts').getList(1, 20, {
 			sort: 'created',
-			filter: 'visible = True',
+			filter: 'visible = True'
 		});
 		posts = resultList.items;
+		isLoading = false;
 	}
 	onMount(() => {
 		fetchData();
 	});
 </script>
 
-{#each posts as post (post.id)}
+{#if isLoading}
 	<div class="wrapper">
-		<h2>{post.title}</h2>
-		<p>{post.short_description}</p>
-		<a href="work/{post.slug}">Read more →</a>
+		<h2 class="loading">Loading...</h2>
+		<p class="loading">The first post is currently loading, please wait until it has finished loading into the page</p>
+		<a href="work" class="loading">Read more →</a>
 	</div>
-{/each}
+{:else}
+	{#each posts as post (post.id)}
+		<div class="wrapper">
+			<h2>{post.title}</h2>
+			<p>{post.short_description}</p>
+			<a href="work/{post.slug}">Read more →</a>
+		</div>
+	{/each}
+{/if}
 
 <style>
 	p {

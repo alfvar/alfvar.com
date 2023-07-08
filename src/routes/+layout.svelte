@@ -18,9 +18,9 @@
 		<slot />
 		<footer>
 			<div>
-				<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/"> </a>
-				<a class="twitter" href="https://twitter.com/alfvar_"> </a>
-				<a class="gumroad" href="https://alfvar.gumroad.com/"> </a>
+				<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
+				<a class="twitter" href="https://twitter.com/alfvar_" />
+				<a class="gumroad" href="https://alfvar.gumroad.com/" />
 
 				<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 			</div>
@@ -30,6 +30,12 @@
 </page-wrapper>
 
 <style>
+	:root {
+		--theme-color: #ff6865;
+		--primary-text-color: #000;
+		--secondary-text-color: #333;
+		--tertiary-text-color: #555;
+	}
 	header {
 		margin: auto;
 		height: 100%;
@@ -46,7 +52,7 @@
 		left: -89.6rem;
 		width: 100rem;
 		height: 200rem;
-		background-color: #ff6865;
+		background-color: var(--theme-color);
 		border-radius: 50%;
 		z-index: -1;
 	}
@@ -81,7 +87,7 @@
 	}
 
 	:global(p, .p) {
-		color: #333;
+		color: var(--secondary-text-color);
 		font-family: minion-pro, serif;
 		font-style: normal;
 		font-size: 1rem;
@@ -117,11 +123,11 @@
 		font-style: normal;
 		text-align: center;
 		margin: 0;
-		color: #333;
+		color: var(--secondary-text-color);
 		box-sizing: border-box;
 	}
 	:global(.subtext) {
-		color: #555;
+		color: var(--tertiary-text-color);
 		font-style: italic;
 	}
 	:global(.text7) {
@@ -142,7 +148,7 @@
 	}
 	:global(.smalltext) {
 		font-size: 1rem;
-		color: #333;
+		color: var(--secondary-text-color);
 	}
 	:global(.active) {
 		text-decoration: underline;
@@ -151,7 +157,18 @@
 		width: 100%;
 		height: 0.2rem;
 		margin: 2rem auto;
-		background-color: #333;
+		color: var(--secondary-text-color);
+	}
+
+	:global(.loading) {
+		background-color: white;
+		color: white;
+		background-size: 100% 100%;
+		border-radius: 0.2rem;
+	}
+
+	:global(.hidden) {
+		display: none;
 	}
 	footer {
 		display: flex;
@@ -162,7 +179,7 @@
 		max-width: 80rem;
 	}
 	footer a {
-		color: #333;
+		color: var(--secondary-text-color);
 		background-position: center, center;
 		background-repeat: no-repeat, no-repeat;
 		background-size: contain, contain;
@@ -236,7 +253,6 @@
 		footer {
 			flex-direction: row;
 			margin: 0 3rem;
-
 		}
 	}
 

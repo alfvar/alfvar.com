@@ -22,7 +22,7 @@
 </script>
 
 <div class="navbar-wrapper">
-	<h1 class="logo">alfvar</h1>
+	<a href="/work"><h1 class="logo">alfvar</h1></a>
 	<h4>is studying a Digital Design master at Chalmers</h4>
 	<div class="divider" />
 	<ul class="topnav">
@@ -51,6 +51,7 @@
 		margin-top: -0.4rem;
 		margin-bottom: -1rem;
 		display: block;
+		color:black;
 	}
 
 	.divider {

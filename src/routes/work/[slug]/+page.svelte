@@ -7,32 +7,48 @@
 	let post = {};
 	let long_description = '';
 	let body = '';
+	let isLoading = true;
 
 	onMount(async () => {
 		const result = await pb.collection('portfolio_posts').getFirstListItem(`slug="${slug}"`);
 		post = result;
 		long_description = post.long_description;
 		body = post.body;
-		console.log(body);
+		isLoading = false;
 	});
 </script>
 
 <div class="wrapper">
-	<div class="dark">
-		<h2 class="white">{post.subtitle}</h2>
-		<p class="text text7 htmlwhite">
-			{@html long_description}
-		</p>
-	</div>
+	{#if isLoading}
+		<div class="dark">
+			<h2 class="white loading">Hi</h2>
+			<p class="loading">This is the description</p>
+		</div>
 
-	<div class="text text7 htmlbody htmltext25">
-		{@html body}
-	</div>
+		<div class="loading">
+			<p>This is the body</p>
+		</div>
+	{:else}
+		<div class="dark">
+			<h2 class="white">{post.subtitle}</h2>
+			<p class="text text7 htmlwhite">
+				{@html long_description}
+			</p>
+		</div>
+
+		<div class="text text7 htmlbody htmltext25">
+			{@html body}
+		</div>
+	{/if}
 </div>
 
 <style>
 	.wrapper {
 		padding: 0;
+	}
+
+	.loading {
+		text-align: center;
 	}
 	.htmlwhite > :global(p) {
 		color: #fff;
