@@ -35,8 +35,8 @@
 		padding: 0rem;
 		margin: auto;
 		display: block;
-		width: 100%;
-		height: 100%;
+		width: 95%;
+		height: 95%;
 	}
 	.content {
 		display: flex;

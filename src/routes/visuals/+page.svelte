@@ -65,9 +65,10 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 0.2rem;
-		margin: 0 auto;
+		margin: 1.75rem 0 0.5rem;
 		width: 100%;
 		max-width: 100rem;
+		
 	}
 
 	.placeholder {
