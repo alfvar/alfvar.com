@@ -11,7 +11,7 @@
 	onMount(async () => {
 		const result = await pb.collection('artwork').getFirstListItem(`slug="${slug}"`);
 		post = result;
-		imageSrc = `https://api.alfvar.com/api/files/${post.collectionId}/${post.id}/${post.image}`;
+		imageSrc = `https://api.alfvar.com/api/files/${post.collectionId}/${post.id}/${post.image}?thumb=500x0`;
 		isLoading = false;
 	});
 </script>

@@ -1,5 +1,6 @@
 <script>
 	import Header from '$lib/Header.svelte';
+	import { isLoading } from '../stores.js'; // import the new store
 </script>
 
 <svelte:head>
@@ -16,20 +17,42 @@
 
 	<main>
 		<slot />
-		<footer>
-			<div>
-				<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
-				<a class="twitter" href="https://twitter.com/alfvar_" />
-				<a class="gumroad" href="https://alfvar.gumroad.com/" />
+		{#if $isLoading}
+			<footer class="hidden" />
+		{:else}
+			<footer class={!$isLoading ? 'animate-right' : ''}>
+				<div>
+					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
+					<a class="twitter" href="https://twitter.com/alfvar_" />
+					<a class="gumroad" href="https://alfvar.gumroad.com/" />
 
-				<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
-			</div>
-			<div><p class="smalltext">Website design and content © 2023 Alfvar Arvidsson</p></div>
-		</footer>
+					<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
+				</div>
+				<div><p class="smalltext">Website design and content © 2023 Alfvar Arvidsson</p></div>
+			</footer>
+		{/if}
 	</main>
 </page-wrapper>
 
 <style>
+	.animate-right {
+		visibility: hidden; /* initially hidden */
+		animation: slide-in-right 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	}
+
+	@keyframes slide-in-right {
+		from {
+			transform: translateX(100%);
+			opacity: 0;
+			visibility: visible; /* visible when animation starts */
+		}
+		to {
+			transform: translateX(0);
+			opacity: 1;
+			visibility: visible; /* remain visible after animation ends */
+		}
+	}
+
 	:root {
 		--theme-color: #ff6865;
 		--primary-text-color: #000;
