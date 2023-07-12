@@ -1,28 +1,53 @@
 <script>
 	import { pb } from '$lib/pocketbase';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
+	import { isLoading } from '../../stores.js';
 
 	let posts = [];
-	let isLoading = true;
+	let observer;
+
 	async function fetchData() {
+		isLoading.set(true);
+
 		const resultList = await pb.collection('artwork').getList(1, 20, {
 			sort: 'created'
 		});
 		posts = resultList.items;
-		isLoading = false;
+		isLoading.set(false);
 	}
+
 	onMount(() => {
 		fetchData();
+
+		observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					let img = entry.target;
+					img.src = img.dataset.src;
+					observer.unobserve(img);
+				}
+			});
+		});
+
+		document.querySelectorAll('.lazyload').forEach((img) => {
+			observer.observe(img);
+		});
+	});
+
+	onDestroy(() => {
+		if (observer) {
+			observer.disconnect();
+		}
 	});
 </script>
 
-<div class="wrapper">
+<div>
 	<div class="imageGrid">
-		{#if isLoading}
-			<div class="placeholder" />	
+		{#if $isLoading}
+			<div class="placeholder" />
 		{:else}
-			{#each posts as post (post.id)}
-				<div class="image">
+			{#each posts as post, index (post.id)}
+				<div class="image animate-appear" style="animation-delay: {index * 0.05}s;">
 					<a href="/visuals/{post.slug}">
 						<img
 							src="https://api.alfvar.com/api/files/{post.collectionId}/{post.id}/{post.image}?thumb=500x0"
@@ -36,9 +61,6 @@
 </div>
 
 <style>
-	.wrapper {
-		padding: 0rem;
-	}
 	.imageGrid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;

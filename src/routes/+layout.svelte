@@ -20,7 +20,7 @@
 		{#if $isLoading}
 			<footer class="hidden" />
 		{:else}
-			<footer class={!$isLoading ? 'animate-right' : ''}>
+			<footer class={!$isLoading ? 'animate-appear' : ''}>
 				<div>
 					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
 					<a class="twitter" href="https://twitter.com/alfvar_" />
@@ -35,19 +35,37 @@
 </page-wrapper>
 
 <style>
-	.animate-right {
+	:global(.animate-right) {
 		visibility: hidden; /* initially hidden */
-		animation: slide-in-right 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+		animation: slide-in-right 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	}
+
+	:global(.animate-appear) {
+		visibility: hidden; /* initially hidden */
+		animation: appear 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 	}
 
 	@keyframes slide-in-right {
-		from {
+		0% {
 			transform: translateX(100%);
 			opacity: 0;
 			visibility: visible; /* visible when animation starts */
 		}
-		to {
+
+		100% {
 			transform: translateX(0);
+			opacity: 1;
+			visibility: visible; /* remain visible after animation ends */
+		}
+	}
+
+	@keyframes appear {
+		0% {
+			opacity: 0;
+			visibility: visible; /* visible when animation starts */
+		}
+
+		100% {
 			opacity: 1;
 			visibility: visible; /* remain visible after animation ends */
 		}

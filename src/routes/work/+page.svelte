@@ -35,22 +35,4 @@
 		margin-top: 0.5rem;
 	}
 
-	.animate-right {
-		visibility: hidden; /* initially hidden */
-        animation: slide-in-right 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-	}
-
-	@keyframes slide-in-right {
-		from {
-			transform: translateX(100%);
-			opacity: 0;
-			visibility: visible; /* visible when animation starts */
-		}
-		to {
-			transform: translateX(0);
-			opacity: 1;
-			visibility: visible; /* remain visible after animation ends */
-
-		}
-	}
 </style>

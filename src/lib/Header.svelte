@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-
 	import { page } from '$app/stores';
 
 	$: currentPage = $page.url.pathname; 

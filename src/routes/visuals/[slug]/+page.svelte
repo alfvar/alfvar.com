@@ -2,37 +2,41 @@
 	import { page } from '$app/stores';
 	import { pb } from '$lib/pocketbase';
 	import { onMount } from 'svelte';
+	import { isLoading } from '../../../stores.js';
 
 	let slug = $page.params.slug;
-	let isLoading = true;
 	let imageSrc = '';
-
 	let post = {};
 	onMount(async () => {
+		isLoading.set(true);
 		const result = await pb.collection('artwork').getFirstListItem(`slug="${slug}"`);
 		post = result;
-		imageSrc = `https://api.alfvar.com/api/files/${post.collectionId}/${post.id}/${post.image}?thumb=500x0`;
-		isLoading = false;
+		imageSrc = `https://api.alfvar.com/api/files/${post.collectionId}/${post.id}/${post.image}?thumb=1000x0`;
+		isLoading.set(false);
 	});
 </script>
 
-{#if isLoading}
-	<div class="placeholder" />
+{#if $isLoading}
+	<div class="hidden" />
 {:else}
-	<div class="wrapper">
-		<div class="content">
-			<img src={imageSrc} alt={post.title} />
-			<h3>"{post.title}"</h3>
+	<div class="animate-appear">
+		<div class="wrapper">
+			<div class="content">
+				<img src={imageSrc} alt={post.title} />
+			</div>
 		</div>
+		<div class="content"><h4 style="margin:1rem;">{post.title}</h4></div>
 	</div>
 {/if}
 
 <style>
+
 	.wrapper {
 		padding: 0rem;
-		width: 95.4vw;
-		height: 110vw;
 		margin: auto;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 	.content {
 		display: flex;
@@ -53,27 +57,15 @@
 		object-fit: contain;
 	}
 
-	.placeholder {
-		height: 95.4vw;
-		width: 95vw;
-		object-fit: contain;
-	}
-
 	@media (min-width: 768px) {
 		.content {
 			align-items: center;
 		}
 
-		.placeholder {
-			height: 80vh;
-			object-fit: contain;
-			width: 20vw;
-		}
 		.wrapper {
 			margin: auto;
-			width: 80vh;
-			height: 90vh;
-			margin-bottom: 2rem;
+			width: 55%;
+			height: 55%;
 		}
 	}
 </style>
