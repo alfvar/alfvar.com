@@ -84,7 +84,7 @@
 	main {
 		margin: 0rem;
 		height: fit-content;
-		margin-top: 3rem;
+		margin-top: 1.75rem;
 	}
 
 	.bg {
@@ -100,7 +100,7 @@
 
 	:global(.wrapper) {
 		padding: 1.5rem 2rem;
-		margin: 1.75rem 0 0.5rem;
+		margin: 0 0 0.5rem;
 		backdrop-filter: blur(40px);
 		-webkit-backdrop-filter: blur(40px);
 		border-style: solid;
@@ -277,9 +277,6 @@
 	}
 
 	@media (min-width: 600px) {
-		:global(.wrapper) {
-			margin: 1.75rem 3rem 0.5rem;
-		}
 
 		:global(.sidetext) {
 			margin-left: -8vw;
@@ -293,7 +290,13 @@
 	@media (min-width: 705px) {
 		footer {
 			flex-direction: row;
-			margin: 0 3rem;
+		}
+
+		main {
+			width:88%;
+			margin:auto;
+			margin-top:1.75rem;
+
 		}
 	}
 
@@ -311,7 +314,7 @@
 			height: 200rem;
 		}
 		:global(.wrapper) {
-			margin: 1.75rem 0rem 0.5rem 0rem;
+			margin: 0 0rem 0.5rem 0rem;
 		}
 		:global(.sidetext) {
 			margin-left: -5rem;
@@ -322,16 +325,6 @@
 			margin-left: -35%;
 		}
 
-		:global(.text7) {
-			margin-left: 7%;
-			margin-right: 7%;
-		}
-
-		:global(.text25) {
-			margin-left: 20%;
-			margin-right: 20%;
-		}
-
 		header {
 			margin: 0 4rem;
 			margin-bottom: 0;
@@ -340,6 +333,7 @@
 		}
 
 		main {
+			margin-top: 4.75rem;
 			width: 100%;
 			margin-right: 4rem;
 		}

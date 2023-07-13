@@ -65,7 +65,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 0.2rem;
-		margin: 1.75rem 0 0.5rem;
+		margin: 0rem 0 0.5rem;
 		width: 100%;
 		max-width: 100rem;
 		
@@ -83,10 +83,17 @@
 		box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.15);
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 705px) {
 		.imageGrid {
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			width: 100%;
+		}
+	}
+	@media (min-width: 1200px) {
+		.imageGrid {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			width: 100%;
+			margin:0 auto;
 		}
 	}
 </style>

@@ -2,33 +2,27 @@
 	import { page } from '$app/stores';
 	import { pb } from '$lib/pocketbase';
 	import { onMount } from 'svelte';
+	import { isLoading } from '../../../stores.js';
 
 	let slug = $page.params.slug;
 	let post = {};
 	let long_description = '';
 	let body = '';
-	let isLoading = true;
 
 	onMount(async () => {
+		isLoading.set(true);
 		const result = await pb.collection('portfolio_posts').getFirstListItem(`slug="${slug}"`);
 		post = result;
 		long_description = post.long_description;
 		body = post.body;
-		isLoading = false;
+		isLoading.set(false);
 	});
 </script>
 
-<div class="wrapper">
-	{#if isLoading}
-		<div class="dark">
-			<h2 class="white loading">Hi</h2>
-			<p class="loading">This is the description</p>
-		</div>
-
-		<div class="loading">
-			<p>This is the body</p>
-		</div>
-	{:else}
+{#if $isLoading}
+	<div />
+{:else}
+	<div class="wrapper animate-appear">
 		<div class="dark">
 			<h2 class="white">{post.subtitle}</h2>
 			<p class="text text7 htmlwhite">
@@ -36,20 +30,17 @@
 			</p>
 		</div>
 
-		<div class="text text7 htmlbody htmltext25">
+		<div class="htmlbody">
 			{@html body}
 		</div>
-	{/if}
-</div>
+	</div>
+{/if}
 
 <style>
 	.wrapper {
 		padding: 0;
 	}
 
-	.loading {
-		text-align: center;
-	}
 	.htmlwhite > :global(p) {
 		color: #fff;
 		font-size: 1.5rem;
@@ -71,8 +62,9 @@
 
 	.dark {
 		background-color: rgb(20, 20, 20);
-		padding: 4rem 0rem 4rem 0rem;
+		padding: 4rem 0rem 10rem 0rem;
 		border-radius: 0.1em;
+		margin-bottom: 2rem;
 	}
 
 	.htmlbody > :global(ul li) {
@@ -84,13 +76,18 @@
 	}
 
 	.htmlbody > :global(* img) {
-		object-fit: cover;
-		width: 100%;
-		margin: 4rem auto 0;
-		border-radius: 0.2em;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 0.2rem;
 		box-shadow: 0 0 0.5em 0.1em #0000001a;
+		display: block;
 	}
 
+	:global(.text7) {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
 	h2 {
 		text-align: center;
 		padding-top: 2rem;
