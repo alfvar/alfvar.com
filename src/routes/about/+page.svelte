@@ -46,7 +46,7 @@
 		float: right;
 		margin-top: -2rem;
 		width: 12rem;
-		height: 20rem;
+		height: 12rem;
 		border-radius: 50%;
 		margin-right: -1rem;
 		margin-bottom: 1rem;
