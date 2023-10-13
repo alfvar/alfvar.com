@@ -9,32 +9,34 @@
 		<img src={selfie} alt="Alfvar" class="drawing" />
 
 		<p>
-			My name is Alfvar Arvidsson. I'm a budding <b>UX designer</b> currently doing my bachelor's
-			degree at Halmstad University. I'm interested in
+			My name is Alfvar Arvidsson. I'm a budding <b>UX/interaction designer</b> currently doing my
+			master's degree at Chalmers University. I'm interested in
 			<b>service design, UI design, and UX research,</b>
 			to name a few things. You can e-mail me at
-			<a href="mailto:hello@alfvar.com" class="p" style="text-decoration:underline;"> hello@alfvar.com </a>
+			<a href="mailto:hello@alfvar.com" class="p" style="text-decoration:underline;">
+				hello@alfvar.com
+			</a>
 			if you want to get in touch.
 			<br />
+			<br />I love working in teams. I was the guy who went to school on the days when I was
+			finished with my assignment, just to hang with my classmates. I tend to get visions of ideas
+			quickly but I always make an effort to be humble and learn from the people around me.
 			<br />
-			I love working in teams. I was the guy who went to school on the days when I was finished with
-			my assignment, just to hang with my classmates. I tend to get visions of ideas quickly but I always
-			make sure the team is on board and understands what I mean before proceeding with anything.
-			<br />
-			<br />
-			When I'm not working on school assignments, I'm usually working on my own projects. I've barely
-			ever found anything that doesn't capture my interest (except sports!). I grew up playing with a
-			digital camcorder and Windows Movie Maker, and I focused on different forms of media production
-			all through high school. I used to produce music under the alias
+			<br />When I'm not working on school assignments, I'm usually working on my own projects. I've
+			barely ever found anything that doesn't capture my interest (except sports!). I grew up in the
+			digital native generation, playing with a digital camcorder and Windows Movie Maker as a
+			child. I focused on different forms of media production all through high school. I used to
+			produce music under the alias
 			<a
 				href="https://open.spotify.com/artist/36vb4wCIqT2TjjXLEBmn0m?si=qttRnaeqR1umoEmiHYr11g"
 				class="p"
 				style=" text-decoration:underline;">alfie.</a
-			>, and I've dedicated a fair share of my spare time to 3D modelling.
+			>, and I've dedicated a fair share of my spare time to 3D modelling. One of my latest project
+			has been setting up a highly available database for this website, via a Docker swarm cluster
+			running on Raspberry Pis.
 			<br />
-			<br />
-			I love cooking and have a passion for copper and carbon steel cookware. I've also dabbled in microcontrolleres
-			and Raspberry Pi's on occasion.
+			<br />I also love cooking and have a passion for copper and carbon steel cookware. Ask me
+			anything about frying pans, I won't shut up for hours.
 		</p>
 	</div>
 </div>
