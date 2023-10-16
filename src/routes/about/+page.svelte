@@ -51,4 +51,8 @@
 		margin-right: -1rem;
 		margin-bottom: 1rem;
 	}
+
+	.wrapper {
+		padding-bottom: 0rem;
+	}
 </style>
