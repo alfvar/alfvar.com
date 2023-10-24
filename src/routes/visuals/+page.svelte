@@ -14,6 +14,8 @@
 		});
 		posts = resultList.items;
 		isLoading.set(false);
+
+		posts.reverse();
 	}
 
 	onMount(() => {
