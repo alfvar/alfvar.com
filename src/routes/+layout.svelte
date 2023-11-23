@@ -134,6 +134,13 @@
 		font-size: 1rem;
 	}
 
+	:global(ul li) {
+		color: var(--secondary-text-color);
+		font-family: minion-pro, serif;
+		font-style: normal;
+		font-size: 1rem;
+	}
+
 	:global(h1) {
 		color: var(--theme-color);
 		font-size: 4rem;

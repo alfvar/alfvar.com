@@ -61,6 +61,7 @@
 <style>
 	.wrapper {
 		padding: 0;
+		padding-top:2rem;
 	}
 
 	.projectfeatures {
@@ -90,17 +91,29 @@
 	.htmlbody > :global(h1),
 	.htmlbody > :global(h2),
 	.htmlbody > :global(h3),
+	.htmlbody > :global(blockquote),
 	.htmlbody > :global(ul li) {
 		margin-left: 7%;
 		margin-right: 7%;
 	}
 
-	.htmlbody > :global(ul li) {
-		font-style: normal;
+	.htmlbody > :global(blockquote p) {
 		padding-top: 0.4rem;
 		font-family: felt-tip-roman, sans-serif;
 		font-weight: 700;
 		font-size: 1.1rem;
+		transform: rotate(-0.6deg);
+		width:60%;
+		padding-bottom: 2rem;
+
+	}
+
+
+	.htmlbody > :global(ul li) {
+		font-style: normal;
+		font-family: minion-pro, serif;
+		font-style: normal;
+		font-size: 1rem;
 	}
 
 	.htmlbody > :global(* img) {
@@ -108,7 +121,6 @@
 		height: auto;
 		margin: 0 auto;
 		border-radius: 0.2rem;
-		box-shadow: 0 0 0.5em 0.1em #0000001a;
 		display: block;
 	}
 
