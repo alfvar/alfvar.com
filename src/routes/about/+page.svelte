@@ -1,58 +1,99 @@
 <script>
-	import selfie from '$lib/img/selfie.png';
+	import { page } from '$app/stores';
+	import { pb } from '$lib/pocketbase';
+	import { onMount } from 'svelte';
+	import { isLoading } from '../../stores.js';
+	import uni from '$lib/img/ico/uni.svg';
+	import timeframe from '$lib/img/ico/time.svg';
+	import participants from '$lib/img/ico/2people.svg';
+
+	let slug = $page.params.slug;
+	let post = {};
+	let long_description = '';
+	let body = '';
+
+	onMount(async () => {
+		isLoading.set(true);
+		const result = await pb.collection('portfolio_posts').getFirstListItem(`slug="about"`);
+		post = result;
+		long_description = post.long_description;
+		body = post.body;
+
+		isLoading.set(false);
+	});
 </script>
 
-<div class="wrapper">
-	<h2 class="header">Nice to meet you!</h2>
-
-	<div>
-		<img src={selfie} alt="Alfvar" class="drawing" />
-
-		<p>
-			My name is Alfvar Arvidsson. I'm a budding <b>UX/interaction designer</b> currently doing my
-			master's degree at Chalmers University. I'm interested in
-			<b>service design, UI design, and UX research,</b>
-			to name a few things. You can e-mail me at
-			<a href="mailto:hello@alfvar.com" class="p" style="text-decoration:underline;">
-				hello@alfvar.com
-			</a>
-			if you want to get in touch.
-			<br />
-			<br />I love working in teams. I was the guy who went to school on the days when I was
-			finished with my assignment, just to hang with my classmates. I tend to get visions of ideas
-			quickly but I always make an effort to be humble and learn from the people around me.
-			<br />
-			<br />When I'm not working on school assignments, I'm usually working on my own projects. I've
-			barely ever found anything that doesn't capture my interest (except sports!). I grew up in the
-			digital native generation, playing with a digital camcorder and Windows Movie Maker as a
-			child. I focused on different forms of media production all through high school. I used to
-			produce music under the alias
-			<a
-				href="https://open.spotify.com/artist/36vb4wCIqT2TjjXLEBmn0m?si=qttRnaeqR1umoEmiHYr11g"
-				class="p"
-				style=" text-decoration:underline;">alfie.</a
-			>, and I've dedicated a fair share of my spare time to 3D modelling. One of my latest project
-			has been setting up a highly available database for this website, via a Docker swarm cluster
-			running on Raspberry Pis.
-			<br />
-			<br />I also love cooking and have a passion for copper and carbon steel cookware. Ask me
-			anything about frying pans, I won't shut up for hours.
-		</p>
+{#if $isLoading}
+	<div />
+{:else}
+	<div class="wrapper animate-appear">
+		<div class="htmlbody" style="margin-top:4rem;">
+			{@html body}
+		</div>
 	</div>
-</div>
+{/if}
 
 <style>
-	.drawing {
-		float: right;
-		margin-top: -2rem;
-		width: 12rem;
-		height: 12rem;
-		border-radius: 50%;
-		margin-right: -1rem;
-		margin-bottom: 1rem;
+	.wrapper {
+		padding: 0;
 	}
 
-	.wrapper {
-		padding-bottom: 0rem;
+
+	.project_property > * {
+		color: #aaa;
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-align: center;
+	}
+	.htmlbody > :global(p),
+	.htmlbody > :global(h1),
+	.htmlbody > :global(h2),
+	.htmlbody > :global(h3),
+	.htmlbody > :global(blockquote),
+	.htmlbody > :global(ul li) {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
+	.htmlbody > :global(blockquote p) {
+		padding-top: 0.4rem;
+		font-family: felt-tip-roman, sans-serif;
+		font-weight: 700;
+		font-size: 1.1rem;
+		transform: rotate(-0.6deg);
+		width:60%;
+		padding-bottom: 2rem;
+
+	}
+
+
+	.htmlbody > :global(ul li) {
+		font-style: normal;
+		font-family: minion-pro, serif;
+		font-style: normal;
+		font-size: 1rem;
+	}
+
+	.htmlbody > :global(* img) {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 0.2rem;
+		display: block;
+	}
+
+	:global(.text7) {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	h2 {
+		text-align: center;
+		padding-top: 2rem;
+	}
+
+	.htmlbody > :global(h3) {
+		padding-top: 3rem;
+		margin-bottom: -0.75rem;
 	}
 </style>

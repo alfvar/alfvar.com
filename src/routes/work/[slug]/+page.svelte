@@ -61,7 +61,7 @@
 <style>
 	.wrapper {
 		padding: 0;
-		padding-top:2rem;
+		padding-top: 2rem;
 	}
 
 	.projectfeatures {
@@ -103,11 +103,9 @@
 		font-weight: 700;
 		font-size: 1.1rem;
 		transform: rotate(-0.6deg);
-		width:60%;
+		width: 100%;
 		padding-bottom: 2rem;
-
 	}
-
 
 	.htmlbody > :global(ul li) {
 		font-style: normal;
@@ -136,5 +134,11 @@
 	.htmlbody > :global(h3) {
 		padding-top: 3rem;
 		margin-bottom: -0.75rem;
+	}
+
+	@media (min-width: 800px) {
+		.htmlbody > :global(blockquote p) {
+			width: 60%;
+		}
 	}
 </style>
