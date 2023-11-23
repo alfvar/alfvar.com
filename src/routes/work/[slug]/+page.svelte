@@ -28,7 +28,6 @@
 {:else}
 	<div class="wrapper animate-appear">
 		<div>
-			<h2>{post.subtitle}</h2>
 			<p class="text text7 projectheader">
 				{@html long_description}
 			</p>
