@@ -3,6 +3,9 @@
 	import { pb } from '$lib/pocketbase';
 	import { onMount } from 'svelte';
 	import { isLoading } from '../../../stores.js';
+	import uni from '$lib/img/ico/uni.svg';
+	import timeframe from '$lib/img/ico/time.svg';
+	import participants from '$lib/img/ico/2people.svg';
 
 	let slug = $page.params.slug;
 	let post = {};
@@ -15,6 +18,7 @@
 		post = result;
 		long_description = post.long_description;
 		body = post.body;
+
 		isLoading.set(false);
 	});
 </script>
@@ -23,14 +27,33 @@
 	<div />
 {:else}
 	<div class="wrapper animate-appear">
-		<div class="dark">
-			<h2 class="white">{post.subtitle}</h2>
-			<p class="text text7 htmlwhite">
+		<div>
+			<h2>{post.subtitle}</h2>
+			<p class="text text7 projectheader">
 				{@html long_description}
 			</p>
 		</div>
-
-		<div class="htmlbody">
+		<div class="projectfeatures text7" style="padding-bottom: 0rem;">
+			{#if post.institution != ''}
+				<div class="project_property">
+					<img src={uni} alt="University icon" style="width: 1rem; height: 1rem;" />
+					<p class="smalltext">{post.institution}</p>
+				</div>
+			{:else}{/if}
+			{#if post.project_timeframe != ''}
+				<div class="project_property">
+					<img src={timeframe} alt="Clock icon" style="width: 1rem; height: 1rem;" />
+					<p class="smalltext">{post.project_timeframe}</p>
+				</div>
+			{:else}{/if}
+			{#if post.participant_amount != ''}
+				<div class="project_property">
+					<img src={participants} alt="Icon with 2 people" style="width: 1rem; height: 1rem;" />
+					<p class="smalltext">{post.participant_amount}</p>
+				</div>
+			{:else}{/if}
+		</div>
+		<div class="htmlbody" style="margin-top:4rem;">
 			{@html body}
 		</div>
 	</div>
@@ -41,16 +64,29 @@
 		padding: 0;
 	}
 
-	.htmlwhite > :global(p) {
-		color: #fff;
-		font-size: 1.5rem;
+	.projectfeatures {
+		padding-top: -2rem;
+		display: flex;
+		flex-direction: row;
+		align-items: left;
+		max-width: 80rem;
+		gap: 1rem;
+	}
+
+	.project_property {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.3rem;
+	}
+
+	.project_property > * {
+		color: #aaa;
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 400;
+		font-style: normal;
 		text-align: center;
 	}
-
-	.white {
-		color: #fff;
-	}
-
 	.htmlbody > :global(p),
 	.htmlbody > :global(h1),
 	.htmlbody > :global(h2),
@@ -58,13 +94,6 @@
 	.htmlbody > :global(ul li) {
 		margin-left: 7%;
 		margin-right: 7%;
-	}
-
-	.dark {
-		background-color: rgb(20, 20, 20);
-		padding: 4rem 0rem 10rem 0rem;
-		border-radius: 0.1em;
-		margin-bottom: 2rem;
 	}
 
 	.htmlbody > :global(ul li) {
