@@ -41,6 +41,7 @@
 	:global(.animate-appear) {
 		visibility: hidden; /* initially hidden */
 		animation: appear 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+		overflow:hidden;
 	}
 
 	@keyframes slide-in-right {
@@ -97,7 +98,7 @@
 	}
 
 	:global(.wrapper) {
-		padding: 1.5rem 2rem;
+		padding: 1.25rem 2rem;
 		margin: 0 0 0.5rem;
 		backdrop-filter: blur(40px);
 		-webkit-backdrop-filter: blur(40px);

@@ -9,11 +9,3 @@
 		<a href={item.url}>Read more →</a>
 	</div>
 {/each}
-
-<style>
-	div {
-		padding: 1.5rem 0rem;
-		background-color: aqua;
-
-	}
-</style>

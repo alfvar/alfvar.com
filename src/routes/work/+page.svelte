@@ -18,12 +18,12 @@
 	});
 </script>
 
-<div style="overflow:hidden; padding:1rem;">
+<div style="overflow:hidden; padding: 1rem; margin: -1rem -1rem 0rem -1rem;" >
 	{#if $isLoading}
 		<div class="hidden" />
 	{:else}
 		{#each posts as post, index (post.id)}
-			<div class="wrapper animate-right" style="animation-delay: {index * 0.2}s;">
+			<div class="wrapper animate-right" style="animation-delay: {index * 0.2}s; ">
 				<h2>{post.title}</h2>
 				<p>{post.short_description}</p>
 				<a href="work/{post.slug}">Read more →</a>
