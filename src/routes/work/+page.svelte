@@ -23,7 +23,7 @@
 		<div class="hidden" />
 	{:else}
 		{#each posts as post, index (post.id)}
-			<div class="wrapper animate-right" style="animation-delay: {index * 0.2}s; ">
+			<div class="wrapper animate-right" style="animation-delay: {index * 0.2}s; margin-bottom:1rem;">
 				<h2>{post.title}</h2>
 				<p>{post.short_description}</p>
 				<a href="work/{post.slug}">Read more →</a>
