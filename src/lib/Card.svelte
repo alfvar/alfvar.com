@@ -11,11 +11,9 @@
 {/each}
 
 <style>
-	a {
-		font-size: 1em;
-	}
+	div {
+		padding: 1.5rem 0rem;
+		background-color: aqua;
 
-	p {
-		margin-top: 0.5rem;
 	}
 </style>

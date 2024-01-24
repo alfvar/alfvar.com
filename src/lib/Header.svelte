@@ -71,6 +71,19 @@
 		margin: auto;
 		text-align: center;
 	}
+	
+	a {
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: black;
+		text-decoration: none;
+		list-style-type: none;
+	}
+
+	.active {
+		text-decoration: underline;
+	}
 
 	@media (min-width: 400px) {
 		.logo {

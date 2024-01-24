@@ -114,6 +114,13 @@
 		font-size: 1rem;
 	}
 
+	.htmlbody > :global(a) {
+		font-style: normal;
+		font-family: minion-pro, serif !important;
+		font-style: normal;
+		font-size: 1rem;
+	}
+
 	.htmlbody > :global(* img) {
 		max-width: 100%;
 		height: auto;

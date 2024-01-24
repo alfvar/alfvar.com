@@ -23,12 +23,10 @@
 			<footer class={!$isLoading ? 'animate-appear' : ''}>
 				<div>
 					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
-					<a class="twitter" href="https://twitter.com/alfvar_" />
-					<a class="gumroad" href="https://alfvar.gumroad.com/" />
 
 					<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 				</div>
-				<div><p class="smalltext">Website design and content © 2023 Alfvar Arvidsson</p></div>
+				<div><p class="smalltext">Website design and content © 2024 Alfvar Arvidsson</p></div>
 			</footer>
 		{/if}
 	</main>
@@ -186,21 +184,12 @@
 		margin-left: 7%;
 		margin-right: 7%;
 	}
-	:global(a) {
-		font-family: forma-djr-text, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		color: black;
-		text-decoration: none;
-		list-style-type: none;
-	}
+
 	:global(.smalltext) {
 		font-size: 1rem;
 		color: var(--secondary-text-color);
 	}
-	:global(.active) {
-		text-decoration: underline;
-	}
+
 	:global(.divider) {
 		width: 100%;
 		height: 0.2rem;
@@ -233,24 +222,22 @@
 		background-size: contain, contain;
 		padding: 0.75rem;
 		margin-right: 1rem;
+
+		font-family: forma-djr-text, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-decoration: none;
+		list-style-type: none;
 	}
 
 	footer .smalltext {
 		padding: 0;
 	}
 
-	footer .gumroad {
-		background-image: url('$lib/img/ico/gumroad.svg');
-		background-size: 1.5rem;
-	}
-
 	footer .linkedin {
 		background-image: url('$lib/img/ico/linkedin.svg');
 	}
 
-	footer .twitter {
-		background-image: url('$lib/img/ico/twitter.svg');
-	}
 	:global(.underline) {
 		text-decoration: underline;
 	}
@@ -284,7 +271,6 @@
 	}
 
 	@media (min-width: 600px) {
-
 		:global(.sidetext) {
 			margin-left: -8vw;
 		}
@@ -300,10 +286,9 @@
 		}
 
 		main {
-			width:88%;
-			margin:auto;
-			margin-top:1.75rem;
-
+			width: 88%;
+			margin: auto;
+			margin-top: 1.75rem;
 		}
 	}
 
@@ -351,5 +336,4 @@
 			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}
-	
 </style>

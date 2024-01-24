@@ -27,7 +27,7 @@
 	<div />
 {:else}
 	<div class="wrapper animate-appear">
-		<div class="htmlbody" style="margin-top:4rem;">
+		<div class="htmlbody" style="margin-top:2rem;">
 			{@html body}
 		</div>
 	</div>
@@ -36,7 +36,7 @@
 <style>
 	.wrapper {
 		padding: 0;
-	}
+		}
 
 
 	.project_property > * {
@@ -87,9 +87,9 @@
 		margin-left: 7%;
 		margin-right: 7%;
 	}
-	h2 {
+	.htmlbody > :global(h2) {
 		text-align: center;
-		padding-top: 2rem;
+		padding-top: 0rem;
 	}
 
 	.htmlbody > :global(h3) {
