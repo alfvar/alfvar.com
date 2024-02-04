@@ -23,6 +23,8 @@
 			<footer class={!$isLoading ? 'animate-appear' : ''}>
 				<div>
 					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
+					
+					<a class="github" href="https://github.com/alfvar" />
 
 					<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 				</div>
@@ -41,7 +43,7 @@
 	:global(.animate-appear) {
 		visibility: hidden; /* initially hidden */
 		animation: appear 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-		overflow:hidden;
+		overflow: hidden;
 	}
 
 	@keyframes slide-in-right {
@@ -213,7 +215,8 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 1.5rem;
+		margin-top: 1rem;
+		padding-top:0.5rem;
 		max-width: 80rem;
 	}
 	footer a {
@@ -237,6 +240,14 @@
 
 	footer .linkedin {
 		background-image: url('$lib/img/ico/linkedin.svg');
+		background-size: contain;
+
+	}
+
+	footer .github {
+		background-image: url('$lib/img/ico/github.svg');
+		background-size: contain;
+
 	}
 
 	:global(.underline) {
