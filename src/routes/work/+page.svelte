@@ -8,8 +8,12 @@
 		isLoading.set(true);
 		const resultList = await pb.collection('portfolio_posts').getList(1, 20, {
 			sort: 'created',
-			filter: 'visible = True'
+			filter: 'visible = True',
+			fields: 'title, short_description, slug, id, created',
 		});
+
+		console.log('Result List:', resultList);
+
 		posts = resultList.items;
 		isLoading.set(false);
 	}
@@ -41,12 +45,11 @@
 	}
 	.cardcontainer {
 		overflow: hidden;
-		display:flex;
+		display: flex;
 		flex-direction: column;
-		gap:1rem;
-		padding:1rem;
-		margin:-1rem;
-
+		gap: 1rem;
+		padding: 1rem;
+		margin: -1rem;
 	}
 	a {
 		font-family: forma-djr-text, sans-serif;
