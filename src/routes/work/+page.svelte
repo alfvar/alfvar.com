@@ -9,11 +9,8 @@
 		const resultList = await pb.collection('portfolio_posts').getList(1, 20, {
 			sort: 'created',
 			filter: 'visible = True',
-			fields: 'title, short_description, slug, id, created',
+			fields: 'title, short_description, slug, id, created'
 		});
-
-		console.log('Result List:', resultList);
-
 		posts = resultList.items;
 		isLoading.set(false);
 	}
