@@ -23,7 +23,7 @@
 			<footer class={!$isLoading ? 'animate-appear' : ''}>
 				<div>
 					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
-					
+
 					<a class="github" href="https://github.com/alfvar" />
 
 					<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
@@ -154,7 +154,7 @@
 		font-family: forma-djr-text, sans-serif;
 		font-weight: 700;
 		font-style: normal;
-		font-size: 3rem;
+		font-size: 2rem;
 		margin: 0;
 		letter-spacing: -1px;
 		line-height: 3.5rem;
@@ -216,7 +216,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 1rem;
-		padding-top:0.5rem;
+		padding-top: 0.5rem;
 		max-width: 80rem;
 	}
 	footer a {
@@ -241,13 +241,11 @@
 	footer .linkedin {
 		background-image: url('$lib/img/ico/linkedin.svg');
 		background-size: contain;
-
 	}
 
 	footer .github {
 		background-image: url('$lib/img/ico/github.svg');
 		background-size: contain;
-
 	}
 
 	:global(.underline) {
@@ -289,6 +287,10 @@
 
 		:global(p, .p) {
 			font-size: 1.3rem;
+		}
+
+		:global(h2) {
+			font-size: 3rem;
 		}
 	}
 

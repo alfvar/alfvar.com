@@ -26,6 +26,7 @@
 			</div>
 		</div>
 		<div class="content"><h4 style="margin:1rem;">{post.title}</h4></div>
+
 	</div>
 {/if}
 
@@ -48,9 +49,6 @@
 		max-width: 100rem;
 	}
 
-	h3 {
-		margin: 1rem auto;
-	}
 	img {
 		width: 100%;
 		height: 100%;
