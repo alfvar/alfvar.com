@@ -157,7 +157,7 @@
 		font-size: 2rem;
 		margin: 0;
 		letter-spacing: -1px;
-		line-height: 3.5rem;
+		line-height: 1.9rem;
 	}
 	:global(h3) {
 		font-family: forma-djr-text, sans-serif;
@@ -291,6 +291,8 @@
 
 		:global(h2) {
 			font-size: 3rem;
+			line-height: 3.5rem;
+
 		}
 	}
 
