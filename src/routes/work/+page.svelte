@@ -11,7 +11,7 @@
 			filter: 'visible = True',
 			fields: 'title, short_description, slug, id, created'
 		});
-		posts = resultList.items;
+		posts = resultList.items.reverse();
 		isLoading.set(false);
 	}
 	onMount(() => {
