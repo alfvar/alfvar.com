@@ -24,7 +24,7 @@
 </script>
 
 {#if $isLoading}
-	<div />
+	<div> </div>
 {:else}
 	<div class="wrapper animate-appear">
 		<div class="htmlbody" style="margin-top:2rem;">
@@ -38,14 +38,6 @@
 		padding: 0;
 		}
 
-
-	.project_property > * {
-		color: #aaa;
-		font-family: forma-djr-text, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		text-align: center;
-	}
 	.htmlbody > :global(p),
 	.htmlbody > :global(h1),
 	.htmlbody > :global(h2),

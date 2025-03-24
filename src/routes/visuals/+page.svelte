@@ -46,7 +46,7 @@
 <div>
 	<div class="imageGrid">
 		{#if $isLoading}
-			<div class="placeholder" />
+			<div class="placeholder"> </div>
 		{:else}
 			{#each posts as post, index (post.id)}
 				<div class="image animate-appear" style="animation-delay: {index * 0.05}s;">

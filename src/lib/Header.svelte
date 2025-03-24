@@ -23,7 +23,7 @@
 <div class="navbar-wrapper">
 	<a href="/work"><h1 class="logo">alfvar</h1></a>
 	<h4>is studying an Interaction Design master at Chalmers</h4>
-	<div class="divider" />
+	<div class="divider"> </div>
 	<ul class="topnav">
 		{#each menus as { path, name }}
 			<li>
