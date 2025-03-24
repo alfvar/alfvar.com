@@ -21,7 +21,7 @@
 
 <div class="cardcontainer">
 	{#if $isLoading}
-		<div class="hidden" />
+		<div class="hidden"></div>
 	{:else}
 		{#each posts as post, index (post.id)}
 			<a href="work/{post.slug}">
@@ -31,7 +31,7 @@
 				>
 					<h2>{post.title}</h2>
 					<p>{post.short_description}</p>
-					<a href="work/{post.slug}">Read more →</a>
+					<span class="read-more">Read more →</span>
 				</div>
 			</a>
 		{/each}
@@ -59,4 +59,5 @@
 		list-style-type: none;
 		font-size: 1em;
 	}
+
 </style>

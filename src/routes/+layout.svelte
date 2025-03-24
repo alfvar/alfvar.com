@@ -13,22 +13,22 @@
 	<header>
 		<Header />
 	</header>
-	<div class="bg" />
+	<div class="bg"></div>
 
 	<main>
 		<slot />
 		{#if $isLoading}
-			<footer class="hidden" />
+			<footer class="hidden"></footer>
 		{:else}
 			<footer class={!$isLoading ? 'animate-appear' : ''}>
 				<div>
-					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" />
+					<a class="linkedin" href="https://www.linkedin.com/in/alfvar-arvidsson-43388b226/" aria-label="LinkedIn Profile"></a>
 
-					<a class="github" href="https://github.com/alfvar" />
+					<a class="github" href="https://github.com/alfvar" aria-label="GitHub Profile"></a>
 
 					<a class="smalltext" href="mailto:hello@alfvar.com">hello@alfvar.com</a>
 				</div>
-				<div><p class="smalltext">Website design and content © 2024 Alfvar Arvidsson</p></div>
+				<div><p class="smalltext">Website design and content © 2025 Alfvar Arvidsson</p></div>
 			</footer>
 		{/if}
 	</main>
