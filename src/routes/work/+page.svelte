@@ -43,12 +43,10 @@
 		margin-top: 0.5rem;
 	}
 	.cardcontainer {
-		overflow: hidden;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		padding: 1rem;
-		margin: -1rem;
+		margin: 0;
 	}
 	a {
 		font-family: forma-djr-text, sans-serif;
