@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>Alfvar</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="https://use.typekit.net/imz3ygs.css" />
 </svelte:head>
 
@@ -35,6 +35,14 @@
 </page-wrapper>
 
 <style>
+	:global(*), :global(*::before), :global(*::after) {
+		box-sizing: border-box;
+	}
+
+	:global(main) {
+		overflow-x: hidden;
+	}
+
 	:global(.animate-right) {
 		visibility: hidden; /* initially hidden */
 		animation: slide-in-right 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -111,6 +119,9 @@
 		position: relative;
 		max-width: 80rem;
 		box-shadow: 0 0 0.5rem 0.1em rgba(0, 0, 0, 0.09);
+		width: 100%;
+		overflow-x: hidden;
+		box-sizing: border-box;
 	}
 
 	:global(.picture) {
