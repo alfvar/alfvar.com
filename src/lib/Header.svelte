@@ -6,7 +6,7 @@
 
 	const menus = [
 		{
-			name: 'Work',
+			name: 'UX Work',
 			path: '/work'
 		},
 		{
@@ -62,7 +62,8 @@
 		margin: 0 auto;
 		padding: 0;
 		list-style: none;
-		width: 15rem;
+		width: fit-content;
+		justify-content: center;
 	}
 	.topnav li {
 		font-size: 1.2em;
@@ -99,7 +100,6 @@
 
 		.topnav {
 			display: block;
-			width: fit-content;
 			margin: 4em auto;
 		}
 		.topnav li {
