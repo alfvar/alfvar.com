@@ -39,9 +39,6 @@
 		box-sizing: border-box;
 	}
 
-	:global(main) {
-		overflow-x: hidden;
-	}
 
 	:global(.animate-right) {
 		visibility: hidden; /* initially hidden */
