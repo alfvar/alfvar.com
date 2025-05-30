@@ -43,7 +43,8 @@
 	.htmlbody > :global(h2),
 	.htmlbody > :global(h3),
 	.htmlbody > :global(blockquote),
-	.htmlbody > :global(ul li) {
+	.htmlbody > :global(ul li),
+	.htmlbody > :global(ol li) {
 		margin-left: 7%;
 		margin-right: 7%;
 	}
@@ -60,11 +61,24 @@
 	}
 
 
-	.htmlbody > :global(ul li) {
+	.htmlbody > :global(ul),
+	.htmlbody > :global(ol) {
+		margin-bottom: 1.5rem;
+	}
+	.htmlbody > :global(ul li),
+	.htmlbody > :global(ol li) {
 		font-style: normal;
 		font-family: minion-pro, serif;
-		font-style: normal;
 		font-size: 1rem;
+		margin-bottom: 0.8rem;
+		/* Add proper margin for list items */
+		margin-left: calc(7% + 2.5rem);
+		margin-right: 7%;
+	}
+	
+	.htmlbody > :global(ul li:last-child),
+	.htmlbody > :global(ol li:last-child) {
+		margin-bottom: 0;
 	}
 
 	.htmlbody > :global(* img) {
@@ -83,9 +97,16 @@
 		text-align: center;
 		padding-top: 0rem;
 	}
-
 	.htmlbody > :global(h3) {
 		padding-top: 3rem;
 		margin-bottom: -0.75rem;
+	}
+	
+	@media (min-width: 600px) {
+		.htmlbody > :global(p),
+		.htmlbody > :global(ul li),
+		.htmlbody > :global(ol li) {
+			font-size: 1.3rem;
+		}
 	}
 </style>

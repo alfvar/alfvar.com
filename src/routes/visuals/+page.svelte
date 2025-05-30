@@ -46,7 +46,7 @@
 <div>
 	<div class="imageGrid">
 		{#if $isLoading}
-			<div class="placeholder"> </div>
+			<div class="placeholder"></div>
 		{:else}
 			{#each posts as post, index (post.id)}
 				<div class="image animate-appear" style="animation-delay: {index * 0.05}s;">
@@ -70,7 +70,6 @@
 		margin: 0rem 0 0.5rem;
 		width: 100%;
 		max-width: 100rem;
-		
 	}
 
 	.placeholder {
@@ -80,9 +79,7 @@
 	.imageGrid img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
 		margin: 0px;
-		box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.15);
 	}
 
 	@media (min-width: 705px) {
@@ -95,7 +92,8 @@
 		.imageGrid {
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 			width: 100%;
-			margin:0 auto;
+			margin: 0 auto;
 		}
+
 	}
 </style>

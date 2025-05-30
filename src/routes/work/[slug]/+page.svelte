@@ -92,7 +92,8 @@
 	.htmlbody > :global(h2),
 	.htmlbody > :global(h3),
 	.htmlbody > :global(blockquote),
-	.htmlbody > :global(ul li) {
+	.htmlbody > :global(ul li),
+	.htmlbody > :global(ol li) {
 		margin-left: 7%;
 		margin-right: 7%;
 	}
@@ -106,12 +107,22 @@
 		width: 100%;
 		padding-bottom: 2rem;
 	}
-
-	.htmlbody > :global(ul li) {
+	.htmlbody > :global(ul),
+	.htmlbody > :global(ol) {
+		margin-bottom: 1.5rem;
+	}
+	.htmlbody > :global(ul li),
+	.htmlbody > :global(ol li) {
 		font-style: normal;
 		font-family: minion-pro, serif;
-		font-style: normal;
-		font-size: 1rem;
+		font-size: 1rem; /* Mobile-first font size, same as paragraphs */
+		margin-bottom: 0.5rem;
+
+	}
+
+	.htmlbody > :global(ul li:last-child),
+	.htmlbody > :global(ol li:last-child) {
+		margin-bottom: 0;
 	}
 
 	.htmlbody > :global(a) {
@@ -142,10 +153,15 @@
 		padding-top: 3rem;
 		margin-bottom: -0.75rem;
 	}
-
 	@media (min-width: 800px) {
 		.htmlbody > :global(blockquote p) {
 			width: 60%;
+		}
+
+		.htmlbody > :global(p),
+		.htmlbody > :global(ul li),
+		.htmlbody > :global(ol li) {
+			font-size: 1.3rem;
 		}
 	}
 </style>

@@ -142,12 +142,24 @@
 		font-style: normal;
 		font-size: 1rem;
 	}
+	:global(ul),
+	:global(ol) {
+		padding-left: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
 
-	:global(ul li) {
+	:global(ul li),
+	:global(ol li) {
 		color: var(--secondary-text-color);
 		font-family: minion-pro, serif;
 		font-style: normal;
 		font-size: 1rem;
+		margin-bottom: 0.8rem;
+	}
+	
+	:global(ul li:last-child),
+	:global(ol li:last-child) {
+		margin-bottom: 0;
 	}
 
 	:global(h1) {
@@ -292,8 +304,12 @@
 		:global(.sidetext) {
 			margin-left: -8vw;
 		}
-
 		:global(p, .p) {
+			font-size: 1.3rem;
+		}
+
+		:global(ul li),
+		:global(ol li) {
 			font-size: 1.3rem;
 		}
 

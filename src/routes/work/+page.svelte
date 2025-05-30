@@ -30,6 +30,7 @@
 					style="animation-delay: {index * 0.2}s; margin-bottom:0px;"
 				>
 					<h2>{post.title}</h2>
+					<p class="label handwriting">{post.created.substring(0, 4)}</p>
 					<p>{post.short_description}</p>
 					<span class="read-more">Read more →</span>
 				</div>
@@ -48,6 +49,9 @@
 		gap: 1rem;
 		margin: 0;
 	}
+	.wrapper {
+		overflow: visible;
+	}
 	a {
 		font-family: forma-djr-text, sans-serif;
 		font-weight: 400;
@@ -57,5 +61,11 @@
 		list-style-type: none;
 		font-size: 1em;
 	}
-
+	.label {
+		position: absolute;
+		right: 1.5rem;
+		top:1rem;
+		background-color: white;
+		color:grey;
+	}
 </style>
