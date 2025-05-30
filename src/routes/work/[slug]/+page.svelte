@@ -152,12 +152,13 @@
 	.htmlbody > :global(h3) {
 		padding-top: 3rem;
 		margin-bottom: -0.75rem;
-	}
-	@media (min-width: 800px) {
+	}	@media (min-width: 800px) {
 		.htmlbody > :global(blockquote p) {
 			width: 60%;
 		}
-
+	}
+	
+	@media (min-width: 600px) {
 		.htmlbody > :global(p),
 		.htmlbody > :global(ul li),
 		.htmlbody > :global(ol li) {
