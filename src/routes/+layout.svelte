@@ -360,4 +360,20 @@
 			margin: 0rem 3rem 0.5rem 0rem;
 		}
 	}
+
+	@media print {
+		:global(.animate-appear),
+		:global(.animate-right) {
+			visibility: visible !important;
+			animation: none !important;
+			opacity: 1 !important;
+		}
+		:global(.hidden) {
+			display: block !important;
+			visibility: visible !important;
+		}
+		.bg {
+			display: none !important;
+		}
+	}
 </style>
