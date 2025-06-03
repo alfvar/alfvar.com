@@ -6,7 +6,7 @@
 
 	const menus = [
 		{
-			name: 'UX Work',
+			name: 'Design Work',
 			path: '/work'
 		},
 		{
